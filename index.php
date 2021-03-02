@@ -11,7 +11,9 @@
         <link rel="stylesheet" type="text/css" href="styles/plantilla.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="shortcut icon" href="images/icono_page.png" type="image/png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+        crossorigin="anonymous">
 
         <meta name="description" content="Esta es la página de presentación para el sitio
         de la Escuela Politécnica de Guadalajara">
@@ -51,28 +53,44 @@
                 </section>
             </header>
 
-
+            <a href="Foros/foros.php" class="vinc-f">
             <div class="card">
-                <img src="images/Logo320.png" alt="Denim Jeans" style="width:100%">
+                <button class="foro-b"><i class="fab fa-forumbee foro-i"></i></button>
                 <h1>Foros</h1>
-                <p>Some text about the Foros..</p>
+                <p>Los foros son espacios de dialogo, resolución de dudas y
+                     publicación de avisos en general. Estos se organizan
+                     conforme a las carreras, tambien hay foros generales
+                    para otros temas de interes como becas, servicio social, etc.</p>
             </div>
+            </a>
+            <a href="FAQ/faq.php" class="vinc-p">
             <div class="card">
-                <img src="images/Logo320.png" alt="Denim Jeans" style="width:100%">
+            <button class="pregunta-b"><i class="fa fa-question pregunta-i"></i></i></button>
                 <h1>Preguntas Frecuentes</h1>
-                <p>Some text about the Preguntas..</p>
+                <p>La sección de preguntas frecuentes esta destinada a resolver las preguntas
+                    que resultan más obvias, pero que de igual manera hay muchos que desconocen,
+                    pueden ser del tipo: horarios de oficinas, cómo realizar trámites, etc.</p>
             </div>
+            </a>
+            <a href="Carreras/carreras.php" class="vinc-c">
             <div class="card">
-                <img src="images/Logo320.png" alt="Denim Jeans" style="width:100%">
+                <button class="carrera-b"><i class="fa fa-graduation-cap carrera-i"></i></i></button>
                 <h1>Carreras</h1>
-                <p>Some text about the Carreras..</p>
+                <p>El apartado de carreras se encarga de mostrar información general sobre las carreras
+                    que se imparten dentro de la escuela, las materias que se abordan en las diferentes
+                    carreras y maestros que imparten estas materias.
+                </p>
             </div>
+            </a>
+            <a href="Mapa/mapa.php" class="vinc-m">
             <div class="card">
-                <img src="images/Logo320.png" alt="Denim Jeans" style="width:100%">
+                <button class="map-b"><i class="fa fa-map-marker-alt map-i"></i></i></button>
                 <h1>Mapa</h1>
-                <p>Some text about the Mapa..</p>
+                <p>El mapa se encarga de mostrar las aulas o sitios importantes dentro de cada
+                    edificio, tambien muestra información correspondiente a las aulas
+                    importantes que se ubican en estos como pueden ser horarios, encargados, etc.</p>
             </div>
-
+            </a>
         </main>
         
 
