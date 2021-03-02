@@ -48,6 +48,21 @@ main{
 }
 
 /*TARJETAS*/
+.vinc-m,.vinc-f,.vinc-p,.vinc-c{
+    color: #001021;
+}
+.vinc-m:hover{
+    color: #F7D09F;
+}
+.vinc-f:hover{
+    color: #001021;
+}
+.vinc-p:hover{
+    color: #2196F3;
+}
+.vinc-c:hover{
+    color: #A30000;
+}
 .card {
     box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
@@ -56,20 +71,57 @@ main{
     margin: 6.5em; 
 }
 @media screen and (max-height: 815px){
-      .card{margin: 2.5em;}
+      .card{margin: 2em;}
 }
 .card h1{
     margin-top: .7em;
     width: 320px;
     height: 100px;
+    text-align: center;
 }
-.card img{
-    border-bottom-left-radius:15px ;
-    border-bottom-right-radius:15px ;
-}
+
 .card:hover{
     box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.7);
-    transition: 1.5s;
+    transition: 1s;
+}
+.card p{
+    text-align: justify;
+    margin: 0 37px 20px 37px;
+    width: 240px;
+}
+.foro-i{
+    font-size:265px;
+    color:#001021
+}
+.pregunta-i{
+    font-size:250px;
+    color:#2196F3
+
+}
+.carrera-i{
+    font-size:250px;
+    color:#A30000
+}
+.pregunta-b{
+    margin-top: 15px;
+}
+.carrera-b{
+    margin-top: 20px;
+}
+.map-i{
+    font-size:255px;
+    color:#F7D09F
+}
+.map-b{
+    margin-top: 15px;
+}
+.foro-b, .pregunta-b, .carrera-b, .map-b{
+    border: none;
+    background-color: #FFFFFF;
+}
+.foro-b, .pregunta-b, .carrera-b, .map-b:focus{
+    outline: none;
+
 }
 
 
