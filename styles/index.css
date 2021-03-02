@@ -119,9 +119,8 @@ main{
     border: none;
     background-color: #FFFFFF;
 }
-.foro-b, .pregunta-b, .carrera-b, .map-b:focus{
+.foro-b:focus,.pregunta-b:focus,.carrera-b:focus,.map-b:focus{
     outline: none;
-
 }
 
 
