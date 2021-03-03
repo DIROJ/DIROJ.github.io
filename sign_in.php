@@ -27,11 +27,11 @@
 
         <?php 
 
-            require 'nav.php';
+            require 'scripts/PHP/nav.php';
             nav();
         ?>
         <?php
-            require 'footer.php';
+            require 'scripts/PHP/footer.php';
             footer();
         ?>
 
