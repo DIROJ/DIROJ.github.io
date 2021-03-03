@@ -55,13 +55,25 @@
 }
   
  
-  .active, .accordion:hover {
+.active, .accordion:hover {
     background-color: #FFFFFF;
     color: #001021;
+}
+
+.accordion:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: #001021;
+    float: right;
+    margin-left: 5px;
   }
   
+  .active:after {
+    content: "\2796"; 
+    color: #001021;
+  }
 
-  .panel {
+.panel {
     padding: 0 18px;
     background-color: #3E78B2;
     max-height: 0;
@@ -72,17 +84,17 @@
     margin-left: 10vw;
     color: #E6EDF0;
     text-align: justify;
-  }
-  .letra{
-      margin-top: 18px;
-  }
+}
+.letra{
+    margin-top: 18px;
+}
   
-  .first{
-      margin-top: 15em;
-  }
+.first{
+    margin-top: 15em;
+}
 
 
-  @media screen and (max-height: 815px){
+@media screen and (max-height: 815px){
     .image-container{margin-top: 4em;}
     .text{font-size: 9vw;
           width: 65%;}
