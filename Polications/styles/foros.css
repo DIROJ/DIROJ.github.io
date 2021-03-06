@@ -35,5 +35,142 @@
 @media screen and (max-height: 815px){
     .image-container{margin-top: 4em;}
     .text{font-size: 9vw;
-          width: 65%;}
+          width: 70%;}
+}
+
+
+li{
+  list-style-type: none;
+  margin-top: 15vh;
+}
+li ul{
+  margin-bottom: 5vh;
+}
+
+
+.tar{
+  width: 60vw;
+  height: 20vh;
+  display: block;
+  margin: auto;
+  background-color: #FFFFFF;
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.tar:hover{
+  text-decoration: none;
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.7);
+  
+}
+
+.hv{
+  color: #001021;
+  
+}
+.mec:hover{
+  color:gray;
+  transition: .5s;
+}
+.bec:hover{
+  color: rgb(197, 41, 72);
+}
+.elec:hover{
+  color: rgb(187, 187, 23);
+}
+.amb:hover{
+  color: rgb(9, 148, 9);
+}
+.cons:hover{
+  color: rgb(153, 107, 46);
+}
+.ali:hover{
+  color: orange;
+}
+.met:hover{
+  color: red;
+}
+.plas:hover{
+  color: aquamarine;
+}
+.proc:hover{
+  color: purple;
+}
+.serv:hover{
+  color: cadetblue;
+}
+.prac:hover{
+  color: olivedrab;
+}
+.ico-sm{
+  font-size: 16vh;
+  padding: 1vh;
+  float: center;
+  margin-left: 1vw;
+  width: 10vw;
+  margin-top: 1vh;
+}
+.ico-big{
+  font-size: 14vh;
+  padding: 1vh;
+  float: center;
+  margin-left: 1vw;
+  width: 10vw;
+  margin-top: 2vh;
+}
+.ico-cont{
+  width: 12vw;
+  height: 20vh;
+  float: left;
+  display: block;
+  margin: auto;
+}
+
+.tarjeta-cuerpo{
+  float: left;
+  width: 48vw;
+  height: 20vh;
+  padding: 2vh;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-height: 815px){
+  .tar{width: 83vw; height: 15vh;}
+  .ico-big, .ico-sm{
+    font-size: 8vh;
+    margin-top: 3vh;
+  }
+  .tarjeta-cuerpo{
+    height: 10vh;
+    width: 55vw;
+    margin-left: 15vw;
+  }
+  .tarjeta-cuerpo h2{
+    font-size: 2vh;
+  }
+  .tarjeta-cuerpo h4{
+    font-size: 2vh;
+  }
+}
+
+@media all and (max-height: 815px) and (orientation: landscape){
+  .tar{width: 80vw; height: 40vh; }
+  .ico-big, .ico-sm{
+    font-size: 16vh;
+    margin: 10vh 5vw 10vh 5vw;
+  }
+  .tarjeta-cuerpo{
+    height: 25vh;
+    width: 55vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    
+  }
+  .tarjeta-cuerpo h2, .tarjeta-cuerpo h4{
+    font-size: 6vh;
+  }
 }

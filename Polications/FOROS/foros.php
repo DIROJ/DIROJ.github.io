@@ -9,7 +9,9 @@
         <link rel="stylesheet" type="text/css" href="../styles/plantilla.css">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <link rel="shortcut icon" href="../images/icono_page.png" type="image/png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+        crossorigin="anonymous">
 
         <meta name="description" content="En esta página se muestra las lista de foros
         con información sobre la Escuela Politécnica de Guadalajara, estos pueden ser de las
@@ -33,12 +35,41 @@
             nav();
         ?>
 
+        
+<?php
+        require '../scripts/PHP/list-foro-func.php';
+        inf();
+        ?>
+
         <div class="image-container">
           <div class="text">FOROS</div>
         </div>
-        
+        <li>
+
+        <?php
+        $index = 0;
+
+        while ($index < $arr_CO['results']){
 
 
+          echo '<ul>';
+          
+          echo '    <div class="tar" style="">
+                      <a href="' . $href[$index] . '" class="' . $st[$index] . ' hv">';
+          echo '        <div class="ico-cont"> '; 
+          echo '          <i class="' . $logo[$index] . '"></i>';
+          echo '        </div>';
+          echo '        <div class="tarjeta-cuerpo">';
+          echo '          <h2>' . $nombre[$index] . '</h2>';
+          echo '          <h4>Número de Foros: ' . $no[$index] . '</h4>';
+          echo '        </div>
+                      </a>';
+          echo '    </div>';
+          
+          echo '</ul>';
+          $index++;}
+          ?>
+        </li>
 
 
         <?php
@@ -47,7 +78,7 @@
         ?>
 
 
-        <script src="../scripts/foros.js"></script>
+        <!--<script src="../scripts/foros.js"></script>-->
         <script src="../scripts/plantilla.js"></script>
 
         
