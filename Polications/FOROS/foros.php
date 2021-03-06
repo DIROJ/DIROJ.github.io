@@ -30,45 +30,102 @@
 
 
         <?php 
-
             require '../scripts/PHP/nav.php';
             nav();
         ?>
 
         
-<?php
-        require '../scripts/PHP/list-foro-func.php';
-        inf();
+        <?php
+            require '../scripts/PHP/list-foro-func.php';
+            carr();
+            bachi();
+            otro();
         ?>
 
         <div class="image-container">
           <div class="text">FOROS</div>
         </div>
+
+        
         <li>
 
         <?php
-        $index = 0;
+            $indexC = 0;
 
-        while ($index < $arr_CO['results']){
+            while ($indexC < $arr_COC['resultsC']){
 
 
-          echo '<ul>';
-          
-          echo '    <div class="tar" style="">
-                      <a href="' . $href[$index] . '" class="' . $st[$index] . ' hv">';
-          echo '        <div class="ico-cont"> '; 
-          echo '          <i class="' . $logo[$index] . '"></i>';
-          echo '        </div>';
-          echo '        <div class="tarjeta-cuerpo">';
-          echo '          <h2>' . $nombre[$index] . '</h2>';
-          echo '          <h4>Número de Foros: ' . $no[$index] . '</h4>';
-          echo '        </div>
-                      </a>';
-          echo '    </div>';
-          
-          echo '</ul>';
-          $index++;}
-          ?>
+                echo '<ul>';
+
+                    echo '    <div class="tar">
+                                <a href="' . $hrefC[$indexC] . '" class="' . $stC[$indexC] . ' hv">';
+                    echo '        <div class="ico-cont"> '; 
+                    echo '          <i class="' . $logoC[$indexC] . '"></i>';
+                    echo '        </div>';
+                    echo '        <div class="tarjeta-cuerpo">';
+                    echo '          <h2>' . $nombreC[$indexC] . '</h2>';
+                    echo '          <h4>Número de Foros: ' . $noC[$indexC] . '</h4>';
+                    echo '        </div>
+                                </a>';
+                    echo '    </div>';
+                    echo '</ul>';
+                    $indexC++;
+
+            }
+        ?>
+
+
+        <?php
+            $indexB = 0;
+
+            while ($indexB < $arr_COB['resultsB']){
+
+
+                echo '<ul>';
+
+                    echo '    <div class="tar">
+                                <a href="' . $hrefB[$indexB] . '" class="' . $stB[$indexB] . ' hv">';
+                    echo '        <div class="ico-cont"> '; 
+                    echo '          <i class="' . $logoB[$indexB] . '"></i>';
+                    echo '        </div>';
+                    echo '        <div class="tarjeta-cuerpo">';
+                    echo '          <h2>' . $nombreB[$indexB] . '</h2>';
+                    echo '          <h4>Número de Foros: ' . $noB[$indexB] . '</h4>';
+                    echo '        </div>
+                                </a>';
+                    echo '    </div>';
+                    echo '</ul>';
+                    $indexB++;
+
+            }
+        ?>
+
+
+        <?php
+            $indexO= 0;
+
+            while ($indexO < $arr_COO['resultsO']){
+
+
+                echo '<ul>';
+
+                    echo '    <div class="tar">
+                                <a href="' . $hrefO[$indexO] . '" class="' . $stO[$indexO] . ' hv">';
+                    echo '        <div class="ico-cont"> '; 
+                    echo '          <i class="' . $logoO[$indexO] . '"></i>';
+                    echo '        </div>';
+                    echo '        <div class="tarjeta-cuerpo">';
+                    echo '          <h2>' . $nombreO[$indexO] . '</h2>';
+                    echo '          <h4>Número de Foros: ' . $noO[$indexO] . '</h4>';
+                    echo '        </div>
+                                </a>';
+                    echo '    </div>';
+                    echo '</ul>';
+                    $indexO++;
+
+            }
+        ?>
+
         </li>
 
 
