@@ -5,7 +5,6 @@
     font-family: 'Open Sans', sans-serif;
 } 
 
-
 .image-container {
     
     background-size: cover;
@@ -13,6 +12,7 @@
     height: 300px; 
     margin-top: 10em;
 }
+
 
 .text {
     background-color: #001021;
@@ -61,7 +61,6 @@ li ul{
   box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.7);
   
 }
-
 .hv{
   color: #001021;
   
