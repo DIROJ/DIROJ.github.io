@@ -6,13 +6,13 @@
         require 'conec.php';
         $acentos = $conexion->query("SET NAMES 'utf8'");
     
-        $sqlC = "SELECT * FROM `lista-foros` WHERE Tipo = 'Carrera'";
+        $sqlC = "SELECT * FROM `foros` WHERE Tipo = 'Carrera'";
         $ejecuC = mysqli_query($conexion, $sqlC);
 
-        global $nombreC, $noC, $logoC, $hrefC, $stC, $tipoC, $arr_COC, $iteradorC;
+        global $nombreC, $noC, $logoC, $ShortC, $stC, $tipoC, $arr_COC, $iteradorC;
         $iteradorC = 0;
 
-        $sql_COC = "SELECT COUNT(*) AS `resultsC` FROM `lista-foros` WHERE Tipo = 'Carrera'";
+        $sql_COC = "SELECT COUNT(*) AS `resultsC` FROM `foros` WHERE Tipo = 'Carrera'";
         $eje_COC = mysqli_query($conexion, $sql_COC);
         $arr_COC = mysqli_fetch_array($eje_COC);
 
@@ -23,7 +23,7 @@
             $tipoC  [$iteradorC] = $infC ["Tipo"];
             $noC    [$iteradorC] = $infC ["No."];
             $logoC  [$iteradorC] = $infC ["Logo"];
-            $hrefC  [$iteradorC] = $infC ["Href"];
+            $ShortC  [$iteradorC] = $infC ["Short"];
             $stC    [$iteradorC] = $infC ["color"];
             $iteradorC++;
         }     
@@ -33,13 +33,13 @@
             header("Content-Type: text/html;charset=utf-8");
             require 'conec.php';
             $acentos = $conexion->query("SET NAMES 'utf8'");
-            $sqlB = "SELECT * FROM `lista-foros` WHERE Tipo = 'Bachillerato'";
+            $sqlB = "SELECT * FROM `foros` WHERE Tipo = 'Bachillerato'";
             $ejecuB = mysqli_query($conexion, $sqlB);
     
-            global $nombreB, $noB, $logoB, $hrefB, $stB, $tipoB, $arr_COB, $iteradorB;
+            global $nombreB, $noB, $logoB, $ShortB, $stB, $tipoB, $arr_COB, $iteradorB;
             $iteradorB = 0;
     
-            $sql_COB = "SELECT COUNT(*) AS `resultsB` FROM `lista-foros` WHERE Tipo = 'Bachillerato'";
+            $sql_COB = "SELECT COUNT(*) AS `resultsB` FROM `foros` WHERE Tipo = 'Bachillerato'";
             $eje_COB= mysqli_query($conexion, $sql_COB);
             $arr_COB = mysqli_fetch_array($eje_COB);
     
@@ -50,7 +50,7 @@
                 $tipoB  [$iteradorB] = $infB ["Tipo"];
                 $noB    [$iteradorB] = $infB ["No."];
                 $logoB  [$iteradorB] = $infB ["Logo"];
-                $hrefB  [$iteradorB] = $infB ["Href"];
+                $ShortB  [$iteradorB] = $infB ["Short"];
                 $stB    [$iteradorB] = $infB ["color"];   
                 $iteradorB++;
             }
@@ -60,13 +60,13 @@
             header("Content-Type: text/html;charset=utf-8");
             require 'conec.php';
             $acentos = $conexion->query("SET NAMES 'utf8'");
-            $sqlO = "SELECT * FROM `lista-foros` WHERE Tipo = 'Otro'";
+            $sqlO = "SELECT * FROM `foros` WHERE Tipo = 'Otro'";
             $ejecuO = mysqli_query($conexion, $sqlO);
     
-            global $nombreO, $noO, $logoO, $hrefO, $stO, $tipoO, $arr_COO, $iteradorO;
+            global $nombreO, $noO, $logoO, $ShortO, $stO, $tipoO, $arr_COO, $iteradorO;
             $iteradorO= 0;
     
-            $sql_COO = "SELECT COUNT(*) AS `resultsO` FROM `lista-foros` WHERE Tipo = 'Otro'";
+            $sql_COO = "SELECT COUNT(*) AS `resultsO` FROM `foros` WHERE Tipo = 'Otro'";
             $eje_COO = mysqli_query($conexion, $sql_COO);
             $arr_COO = mysqli_fetch_array($eje_COO);
     
@@ -77,7 +77,7 @@
                 $tipoO  [$iteradorO] = $infO ["Tipo"];
                 $noO    [$iteradorO] = $infO ["No."];
                 $logoO  [$iteradorO] = $infO ["Logo"];
-                $hrefO  [$iteradorO] = $infO ["Href"];
+                $ShortO  [$iteradorO] = $infO ["Short"];
                 $stO    [$iteradorO] = $infO ["color"];   
                 $iteradorO++;
             }

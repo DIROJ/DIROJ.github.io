@@ -1,4 +1,3 @@
-/*Selector Universal*/
 *{
     margin: 0%;
     padding: 0%;
@@ -15,7 +14,6 @@
 
 
 .text {
-    background-color: #001021;
     color: #E6EDF0;
     mix-blend-mode: multiply;
     font-size: 8vw; 
@@ -65,49 +63,38 @@ li{
   color: #001021;
   
 }
-.mec:hover{
-  color:gray;
-  transition: .5s;
+.mec{
+  background-color:gray;
 }
-.bec:hover{
-  color: rgb(197, 41, 72);
-  transition: .5s;
+.bec{
+    background-color: rgb(197, 41, 72);
 }
-.elec:hover{
-  color: rgb(187, 187, 23);
-  transition: .5s;
+.elec{
+    background-color: rgb(187, 187, 23);
 }
-.amb:hover{
-  color: rgb(9, 148, 9);
-  transition: .5s;
+.amb{
+    background-color: rgb(9, 148, 9);
 }
-.cons:hover{
-  color: rgb(153, 107, 46);
-  transition: .5s;
+.cons{
+    background-color: rgb(153, 107, 46);
 }
-.ali:hover{
-  color: orange;
-  transition: .5s;
+.ali{
+    background-color: orange;
 }
-.met:hover{
-  color: red;
-  transition: .5s;
+.met{
+    background-color: red;
 }
-.plas:hover{
-  color: aquamarine;
-  transition: .5s;
+.plas{
+    background-color: aquamarine;
 }
-.proc:hover{
-  color: purple;
-  transition: .5s;
+.proc{
+    background-color: purple;
 }
-.serv:hover{
-  color: cadetblue;
-  transition: .5s;
+.serv{
+    background-color: cadetblue;
 }
-.prac:hover{
-  color: olivedrab;
-  transition: .5s;
+.prac{
+    background-color: olivedrab;
 }
 .ico-sm{
   font-size: 16vh;

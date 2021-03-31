@@ -38,7 +38,7 @@
 
         
         <?php
-            require '../scripts/PHP/list-carr-func.php';
+            require '../scripts/PHP/carr-func.php';
             lista();
         ?>
 

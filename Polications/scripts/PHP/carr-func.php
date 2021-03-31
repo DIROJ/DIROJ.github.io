@@ -6,13 +6,13 @@
         require 'conec.php';
         $acentos = $conexion->query("SET NAMES 'utf8'");
     
-        $sql = "SELECT * FROM `lista-carreras` ";
+        $sql = "SELECT * FROM `carreras` ";
         $ejecu = mysqli_query($conexion, $sql);
 
         global $nombre, $short, $logo, $href, $st, $tipo, $arr_CO, $iterador;
         $iterador = 0;
 
-        $sql_CO = "SELECT COUNT(*) AS `results` FROM `lista-carreras`";
+        $sql_CO = "SELECT COUNT(*) AS `results` FROM `carreras`";
         $eje_CO = mysqli_query($conexion, $sql_CO);
         $arr_CO = mysqli_fetch_array($eje_CO);
 
