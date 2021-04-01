@@ -3,16 +3,16 @@ function nav(){
     echo '<nav>';
     echo '<div id="mySidenav" class="sidenav">';
     echo '        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';  /*Configuracion de Boton*/
-    echo '        <a href="/Polications/index.php"   >Inicio</a>';                                  /*Navegacion de Páginas*/
-    echo '        <a href="/Polications/FAQ/faq.php"     >Preguntas Frecuentes</a>';
-    echo '        <a href="/Polications/Foros/foros.php"   >Foros</a>';
-    echo '        <a href="/Polications/Carreras/carreras.php">Carreras</a>';
-    echo '        <a href="/Polications/Mapa/mapa.php"    >Mapa</a>';
+    echo '        <a href="/GIT/DIROJ.github.io/Polications/index.php"   >Inicio</a>';                                  /*Navegacion de Páginas*/
+    echo '        <a href="/GIT/DIROJ.github.io/Polications/FAQ/"     >Preguntas Frecuentes</a>';
+    echo '        <a href="/GIT/DIROJ.github.io/Polications/Foros/"   >Foros</a>';
+    echo '        <a href="/GIT/DIROJ.github.io/Polications/Carreras/">Carreras</a>';
+    echo '        <a href="/GIT/DIROJ.github.io/Polications/Mapa/"    >Mapa</a>';
     echo '        <a href=""></a>';
     echo '        <a href=""></a>';
     echo '        <a href=""></a>';
-    echo '        <a href="/Polications/sign_in.php">Inicio de Sesión</a>';
-    echo '        <a href="/Polications/sign_up.php">Registro</a>';
+    echo '        <a href="/GIT/DIROJ.github.io/Polications/sign_in.php">Inicio de Sesión</a>';
+    echo '        <a href="/GIT/DIROJ.github.io/Polications/sign_up.php">Registro</a>';
     echo '</div>';
     echo '</nav>';
                                                                                                     /*Boton de Navegación*/

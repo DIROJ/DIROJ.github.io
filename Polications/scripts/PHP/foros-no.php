@@ -23,7 +23,7 @@ while ($index < 7){
     $nufo[$index] = $arr[0]; 
     $index++;   
 }
-echo $index;
+
 
 $index = 0;
 while ($indexB < 9){
@@ -50,7 +50,7 @@ while ($indexO < 12){
     $index++; 
 }
 
-echo $nufo[0] . '</br>';
+/*echo $nufo[0] . '</br>';
 echo $nufo[1] . '</br>';
 echo $nufo[2] . '</br>';
 echo $nufo[3] . '</br>';
@@ -64,5 +64,5 @@ echo $nufoB[1] . '</br>';
 echo $nufoO[0] . '</br>';
 echo $nufoO[1] . '</br>';
 echo $nufoO[2] . '</br>';
-
+*/
 ?>

@@ -49,7 +49,7 @@
             global $nombre, $tipo, $logo, $short, $color;
             $iterador = 0;
     
-            $sql = "SELECT COUNT(*) AS `results` FROM `lista-foros` WHERE Tipo = '$tema'";
+            $sql = "SELECT COUNT(*) AS `results` FROM `lista-foros` WHERE Short = '$tema'";
             $eje = mysqli_query($conexion, $sql);
             $arr = mysqli_fetch_array($eje);
     
@@ -74,19 +74,20 @@
         <ul class="list">
 
         <?php
-            $index = -1;
+            $index = 0;
+            
             while ($index < $arr['results']){
-
+                echo $index;
 
                 echo '<li>';
 
                     echo '    <div class="tar">
-                                <a href=" foros-lista.php?name=' . $nombre[$index +1] . '" class="' . $color[$index +1] . ' hv">';
+                                <a href=" foros-individual.php" class="' . $color[$index] . ' hv">';
                     echo '        <div class="ico-cont"> '; 
-                    echo '          <i class="' . $logo[$index +1] . '"></i>';
+                    echo '          <i class="' . $logo[$index]  . '"></i>';
                     echo '        </div>';
                     echo '        <div class="tarjeta-cuerpo">';
-                    echo '          <h2>' . $nombre[$index+1] . '</h2>';
+                    echo '          <h2>' . $nombre[$index ] . '</h2>';
                     echo '        </div>
                                 </a>';
                     echo '    </div>';
