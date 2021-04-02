@@ -77,7 +77,7 @@
             $index = 0;
             
             while ($index < $arr['results']){
-                echo $index;
+                
 
                 echo '<li>';
 

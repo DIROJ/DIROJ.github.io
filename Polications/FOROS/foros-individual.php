@@ -35,19 +35,50 @@
             nav();
         ?>
 
-
+        <!--
         <div class="image-container">
           <div class="text">INDIVIDUAL</div>
         </div>
+        -->
+        <main class="principal">
 
-        <section>
-            <p>pe</p>
-        </section>
+            <section class="topic">
+                <h1 class="titulo" >TITULOssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssAAA</h1>
+                <div class="tema">
+                    <i class="fas fa-user-tie ico-sm"></i>
+                    <h6>PRÁCTICAS</h6> 
+                </div>
+                <p class="usuario">Usuario</p>
+                <p class="tiempo">Fecha y Hora</p>
+            </section>
 
-        
-        <ul class="list">
+            <form action="" method="POST" class="comment-add" enctype="multipart/form-data"> 
+                <!--<label for="genero" class="letra-form">Género</label><br>-->
+                <textarea type="text" name="comentario" required class="input-comment" value="" maxlength="512"
+                 placeholder="Agregar un comentario" rows="6" cols="133"></textarea>
+                <input type="submit" name="subir" value="Comentar" class="comentar" >
+            </form>
+            
 
-        <?php
+            
+            <article class="comments">
+                <p class="comment-user">Usuario</p>
+                <p class="comment-time">fecha y hora</p>
+                <pre class="comment">Cometario</pre>
+                <i class="fas fa-reply reply"></i>
+            </article>
+
+            <article class="comments">
+                <p class="comment-user">Usuario</p>
+                <p class="comment-time">fecha y hora</p>
+                <pre class="comment">Cometario</pre>
+                <i class="fas fa-reply reply"></i>
+            </article>
+
+
+            <ul class="list">
+
+            <?php
            /* $indexC = 0;
             while ($indexC < $arr_COC['resultsC']){
 
@@ -69,12 +100,14 @@
                     $indexC++;
 
             }
-        */?>
+            */?>
 
 
 
-        </ul>
+            </ul>
 
+        
+        </main>
 
         <?php
             require '../scripts/PHP/footer.php';

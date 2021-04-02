@@ -32,11 +32,7 @@
     box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (max-height: 815px){
-    .image-container{margin-top: 4em;}
-    .text{font-size: 9vw;
-          width: 70%;}
-}
+
 
 .list{
   margin-top: 15vh;
@@ -47,78 +43,151 @@ li{
 }
 
 
-
-.tar{
-  width: 60vw;
-  height: 20vh;
+.principal{
+  float: center;
   display: block;
   margin: auto;
-  background-color: #FFFFFF;
+  width:60vw;
+  height: fit-content;
+}
+
+.topic{
+  width: 60vw;
+  height: 40vh;
+  margin: 15vh 0vw 10vh 0vw;
+  background-color: white;
   box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: .5px rgb(172, 172, 172) solid;
 }
-.tar:hover{
-  text-decoration: none;
-  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.7);
-  
+
+.titulo{
+  float: left;
+  width: 50vw;
+  height: fit-content;
+  padding: 2vh ;
+  word-wrap: break-word;
+  color: #A30000;
 }
-.hv{
-  color: #001021;
-  
-}
-.mec:hover{
-  color:gray;
-  transition: .5s;
-}
-.bec:hover{
-  color: rgb(197, 41, 72);
-  transition: .5s;
-}
-.elec:hover{
-  color: rgb(187, 187, 23);
-  transition: .5s;
-}
-.amb:hover{
-  color: rgb(9, 148, 9);
-  transition: .5s;
-}
-.cons:hover{
-  color: rgb(153, 107, 46);
-  transition: .5s;
-}
-.ali:hover{
-  color: orange;
-  transition: .5s;
-}
-.met:hover{
-  color: red;
-  transition: .5s;
-}
-.plas:hover{
-  color: aquamarine;
-  transition: .5s;
-}
-.proc:hover{
-  color: purple;
-  transition: .5s;
-}
-.serv:hover{
-  color: cadetblue;
-  transition: .5s;
-}
-.prac:hover{
+
+.tema{
+  float: right;
+  width: 7vw;
+  height: fit-content;
+  padding: 1vh 0vw 1vh 0vw;
   color: olivedrab;
-  transition: .5s;
+}
+.tema h6{
+  width: fit-content;
+  height: fit-content;
+  float: center;
+  margin: auto;
 }
 .ico-sm{
-  font-size: 16vh;
-  padding: 1vh;
+  text-align: center;
+  font-size: 4vh;
+  width: 7vw;
+  padding-top: 2vh;
   float: center;
-  margin-left: 1vw;
-  width: 10vw;
-  margin-top: 1vh;
+  margin-bottom: 2vh ;
 }
+
+.usuario{
+  float: left;
+  width: 60vw;
+  height: fit-content;
+  padding: 1vh 1vh 0vh 3vh;
+  color: #1766B5;
+  
+}
+.tiempo{
+  float: left;
+  width: 60vw;
+  height: fit-content;
+  padding: 0vh 1vh 0vh 3vh;
+  color: #1766B5;
+}
+
+
+.comment-add{
+  float: left;
+  width: 60vw;
+  height: 20vh;
+  margin: 0vh 0vw 5vh 0vw;
+}
+.input-comment{
+  background-color: #fff;
+  border: none;
+  padding: 1vh 1vw 0vh .8vw;
+  resize: none;
+  border-radius: 5px;
+}
+.input-comment:focus{
+  border: none;
+  outline: none;
+}
+
+.comentar{
+  float: right;
+  background-color: olivedrab;
+  width: fit-content;
+  height: fit-content;
+  padding: .5vh;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #E6EDF0;
+  margin: 2vh 2vh 2vh 2vh;
+}
+.comentar:hover{
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  color: olivedrab;
+  background-color: #E6EDF0;
+}
+.comentar:focus{
+  outline: none;
+}
+
+.comments{
+  width: 60vw;
+  height: fit-content;
+  display: block;
+  float: left;
+  
+}
+.comment-user{
+  width: 47vw;
+  height: fit-content;
+  float: left;
+  padding: 2vh 2vh 0vh 2vh;
+  font-size: small;
+  color: #1766B5;
+}
+.comment-time{
+  font-size: small;
+  width: 13vw;
+  height: fit-content;
+  float: right;
+  padding: 2vh 2vh 0vh 2vh;
+}
+.comment{
+  width: 60vw;
+  height: fit-content;
+  float: left;
+  padding: 2vh;
+  font-size: medium;
+  font-family: 'Open Sans';
+}
+.reply{
+font-size: 2.5vh;
+padding-left: 2vw;
+}
+
+
 .ico-big{
-  font-size: 14vh;
+  font-size: 6vh;
   padding: 1vh;
   float: center;
   margin-left: 1vw;
@@ -126,60 +195,47 @@ li{
   margin-top: 2vh;
 }
 .ico-cont{
-  width: 12vw;
+  width: 5vw;
   height: 20vh;
   float: left;
   display: block;
   margin: auto;
 }
 
-.tarjeta-cuerpo{
-  float: left;
-  width: 48vw;
-  height: 20vh;
-  padding: 2vh;
-}
-
-
-
-
-
-
 
 
 @media screen and (max-height: 815px){
-  .tar{width: 83vw; height: 15vh;}
-  .ico-big, .ico-sm{
-    font-size: 8vh;
-    margin-top: 3vh;
-  }
-  .tarjeta-cuerpo{
-    height: 10vh;
-    width: 55vw;
-    margin-left: 15vw;
-  }
-  .tarjeta-cuerpo h2{
-    font-size: 2vh;
-  }
-  .tarjeta-cuerpo h4{
-    font-size: 2vh;
-  }
+  .principal{width: 90vw;}
+  .topic{width: 90vw; }
+  .titulo{font-size: 2.5vh; width: 72vw; }
+  .tema{ width: 17vw; text-align: center; }
+  .tema h6{font-size: 1.2vh;}
+  .tema i{font-size: 2.5vh;}
+  .input-comment{width: 80vw;}
+  .usuario, .tiempo{font-size: 1.3vh; padding: 0vh 2vh 0vh 2vh; margin: 0.5;}
+  .comment-add{ width: 90vw; height: fit-content;}
+  .input-comment{width: 90vw; font-size: small;}
+  .comentar{margin: 1vh 0vw 0vh 0vw; font-size: smaller;}
+  .comments{width: 90vw; margin-top: 1vh;}
+  .comment-time{width: fit-content;}
+  .comment{width: 90vw;  font-size:small; margin-bottom: 0;}
+  .reply{float: left; padding-top: 0; }
 }
 
 @media all and (max-height: 815px) and (orientation: landscape){
-  .tar{width: 80vw; height: 40vh; }
-  .ico-big, .ico-sm{
-    font-size: 16vh;
-    margin: 10vh 5vw 10vh 5vw;
-  }
-  .tarjeta-cuerpo{
-    height: 25vh;
-    width: 55vw;
-    margin-left: 10vw;
-    margin-top: 5vh;
-    
-  }
-  .tarjeta-cuerpo h2, .tarjeta-cuerpo h4{
-    font-size: 6vh;
-  }
+  .principal{width: 85vw; margin-top: 30vh; }
+  .topic{width: 85vw; }
+  .titulo{font-size: 2.5vw; width: 67vw; }
+  .tema{ width: 17vw; text-align: center; }
+  .tema h6{font-size: 1.2vw;}
+  .tema i{font-size: 2.5vw;}
+  .input-comment{width: 85vw;}
+  .usuario, .tiempo{font-size: 1.3vw; padding: 0vh 2vh 0vh 2vh; margin: 0.5;}
+  .comment-add{ width: 85vw; height: fit-content;}
+  .input-comment{width: 85vw; font-size: medium;}
+  .comentar{margin: 3vh 0vw 0vh 0vw; font-size: 1.8vw;}
+  .comments{width: 85vw; margin-top: 6vh; }
+  .comment-time{width: fit-content;}
+  .comment{width: 85vw;  font-size:medium; margin-bottom: 0;}
+  .reply{float: left; padding-top: 0; font-size: medium;}
 }
