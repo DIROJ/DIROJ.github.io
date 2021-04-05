@@ -75,7 +75,7 @@ li{
   width: 7vw;
   height: fit-content;
   padding: 1vh 0vw 1vh 0vw;
-  color: olivedrab;
+  
 }
 .tema h6{
   width: fit-content;
@@ -86,6 +86,14 @@ li{
 .ico-sm{
   text-align: center;
   font-size: 4vh;
+  width: 7vw;
+  padding-top: 2vh;
+  float: center;
+  margin-bottom: 2vh ;
+}
+.ico-big{
+  text-align: center;
+  font-size: 3vh;
   width: 7vw;
   padding-top: 2vh;
   float: center;
@@ -128,8 +136,8 @@ li{
 }
 
 .comentar{
+  background-color: #3E78B2;
   float: right;
-  background-color: olivedrab;
   width: fit-content;
   height: fit-content;
   padding: .5vh;
@@ -143,13 +151,12 @@ li{
 .comentar:hover{
   box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
-  color: olivedrab;
   background-color: #E6EDF0;
+  color: #3E78B2;
 }
 .comentar:focus{
   outline: none;
 }
-
 .comments{
   width: 60vw;
   height: fit-content;
@@ -186,20 +193,47 @@ padding-left: 2vw;
 }
 
 
-.ico-big{
-  font-size: 6vh;
-  padding: 1vh;
-  float: center;
-  margin-left: 1vw;
-  width: 10vw;
-  margin-top: 2vh;
+.mec{
+  color:gray;
 }
-.ico-cont{
-  width: 5vw;
-  height: 20vh;
-  float: left;
-  display: block;
-  margin: auto;
+
+
+.bec{
+    background-color: rgb(197, 41, 72);
+}
+.elec{
+    background-color: rgb(187, 187, 23);
+}
+.amb{
+    background-color: rgb(9, 148, 9);
+}
+.cons{
+    background-color: rgb(153, 107, 46);
+}
+
+.ali{
+    background-color: orange;
+}
+
+.met{
+    background-color: red;
+}
+
+.plas{
+    color: aquamarine;
+}
+
+.proc{
+    background-color: purple;
+}
+
+
+.serv{
+    background-color: cadetblue;
+}
+
+.prac{
+    background-color: olivedrab;
 }
 
 

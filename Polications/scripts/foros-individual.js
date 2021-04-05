@@ -5,17 +5,18 @@ if (window.history.replaceState) { // verificamos disponibilidad
 
 
 
-
-function cargar() {
-  
-  $(document).ready(function(){
-    $('.comments').remove();
-    $('#aqui').load('ejemplo.php');
-      return false;
-    });
-    
-}
-
+$(document).ready(function () {
+  $('#comentar').attr('disabled', true);
+  $('textarea#comentario').on('keyup', function () {
+      var textarea_value = $("textarea#comentario").val();
+      
+      if (textarea_value != '' ) {
+          $('#comentar').attr('disabled', false);
+      } else {
+          $('#comentar').attr('disabled', true);
+      }
+  });
+});
 
 function Hola(comentario) {
   let parametros = {"Comentario":comentario};

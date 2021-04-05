@@ -3,8 +3,8 @@
 
     <head> 
         <?php
-            $titulo = $_GET["titulo"];                    
-            echo '<title>' . $titulo . '</title>';
+            $tituloR = $_GET["titulo"]; 
+            echo '<title>' . $tituloR . '</title>';
         ?>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,37 +28,55 @@
     <body class="cuerpo">
 
         
+        <?php
+            header("Content-Type: text/html;charset=utf-8");
+            require '../scripts/PHP/conec.php';
+            $acentosR = $conexion->query("SET NAMES 'utf8'");
 
+            $sqlR = "SELECT `Logo`, `Short`, `Usuario`, `Color`, `Fecha`, `Boton`  FROM `lista-foros` WHERE Nombre = '$tituloR' ";
+            $ejecuR = mysqli_query($conexion, $sqlR);
+            
+            global $fechaR, $usuarioR, $logoR, $colorR, $shortR, $botonR;
+
+            $infor=mysqli_fetch_array($ejecuR);
+
+                $usuarioR  = $infor ["Usuario"];
+                $logoR     = $infor ["Logo"];
+                $colorR    = $infor ["Color"]; 
+                $shortR    = $infor ["Short"];
+                $fechaR    = $infor ["Fecha"];
+                $botonR    = $infor ["Boton"];
+        
+        ?>
 
         <?php 
             require '../scripts/PHP/nav.php';
             nav();
         ?>
 
-        <!--
-        <div class="image-container">
-          <div class="text">INDIVIDUAL</div>
-        </div>
-        -->
+        
         <main class="principal">
 
             <section class="topic">
                 <?php
-                echo '<h1 class="titulo" id="titulo">' . $titulo . '</h1>';
+                echo '<h1 class="titulo" id="titulo">' . $tituloR . '</h1>';
+                
+                echo '<div class="tema">';
+                echo '    <i class="' . $logoR . ' ' . $colorR . '"></i>';
+                echo '    <h6 class="' . $colorR . '">' . $shortR . '</h6> ';
+                echo '</div>';
+                echo '<p class="usuario">' . $usuarioR . '</p>';
+                echo '<p class="tiempo">' . $fechaR . '</p>';
                 ?>
-                <div class="tema">
-                    <i class="fas fa-user-tie ico-sm"></i>
-                    <h6>PRÁCTICAS</h6> 
-                </div>
-                <p class="usuario">Usuario</p>
-                <p class="tiempo">Fecha y Hora</p>
             </section>
 
             <form action="" method="POST" class="comment-add" enctype="multipart/form-data"> 
                 <!--<label for="genero" class="letra-form">Género</label><br>-->
                 <textarea type="text" name="comentario" required class="input-comment" maxlength="512"
                  placeholder="Agregar un comentario" rows="6" cols="133" id="comentario"></textarea>
+                
                 <input type="submit" name="subir" value="Comentar" class="comentar" id="comentar" onclick="Hola($('#comentario').val())">
+                 
             </form>
 
             <p id="aqui">
