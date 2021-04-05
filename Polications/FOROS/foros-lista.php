@@ -1,8 +1,13 @@
 <html lang="es-MX"> <!--Lenguaje-->
 
-
+   
+    
     <head>                     
-        <title>Polications - Foros</title>
+        <?php 
+            global $tema;
+            $tema = $_GET["name"];
+            echo '<title>Lista foros - ' . $tema . '</title>'; 
+        ?>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../styles/foros-lista.css">
@@ -14,8 +19,8 @@
         crossorigin="anonymous">
 
         <meta name="description" content="En esta página se muestra las lista de foros
-        con información sobre la Escuela Politécnica de Guadalajara, estos pueden ser de las
-        diferentes carreras u otros temas de interes general para la comunidad de estudiantil.">
+        con información sobre la Escuela Politécnica de Guadalajara, en este apartado en 
+        especifico se encuentran los de un tema en general.">
         <meta name="author" content="Rob Mckenna">
     </head>
     
@@ -32,8 +37,7 @@
         <?php 
             require '../scripts/PHP/nav.php';
             nav();
-            global $tema;
-            $tema = $_GET["name"];
+            
         ?>
 
                
@@ -82,12 +86,12 @@
                 echo '<li>';
 
                     echo '    <div class="tar">
-                                <a href=" foros-individual.php" class="' . $color[$index] . ' hv">';
+                                <a href=" foros-individual.php?titulo=' . $nombre[$index] . '" class="' . $color[$index] . ' hv">';
                     echo '        <div class="ico-cont"> '; 
                     echo '          <i class="' . $logo[$index]  . '"></i>';
                     echo '        </div>';
                     echo '        <div class="tarjeta-cuerpo">';
-                    echo '          <h2>' . $nombre[$index ] . '</h2>';
+                    echo '          <h2>' . $nombre[$index] . '</h2>';
                     echo '        </div>
                                 </a>';
                     echo '    </div>';
