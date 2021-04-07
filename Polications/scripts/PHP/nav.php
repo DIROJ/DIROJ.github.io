@@ -3,7 +3,7 @@ function nav(){
     echo '<nav>';
     echo '<div id="mySidenav" class="sidenav">';
     echo '        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';  /*Configuracion de Boton*/
-    echo '        <a href="/GIT/DIROJ.github.io/Polications/index.php"   >Inicio</a>';                                  /*Navegacion de Páginas*/
+    echo '        <a href="/GIT/DIROJ.github.io/Polications/"   >Inicio</a>';                                  /*Navegacion de Páginas*/
     echo '        <a href="/GIT/DIROJ.github.io/Polications/FAQ/"     >Preguntas Frecuentes</a>';
     echo '        <a href="/GIT/DIROJ.github.io/Polications/Foros/"   >Foros</a>';
     echo '        <a href="/GIT/DIROJ.github.io/Polications/Carreras/">Carreras</a>';
