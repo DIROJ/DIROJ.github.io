@@ -53,6 +53,8 @@
                 </section>
             </header>
 
+
+            <section  class="cards">
             <a href="Foros/" class="vinc-f">
             <div class="card">
                 <button class="foro-b"><i class="fab fa-forumbee foro-i"></i></button>
@@ -91,6 +93,7 @@
                     importantes que se ubican en estos como pueden ser horarios, encargados, etc.</p>
             </div>
             </a>
+            <section>
         </main>
         
 
