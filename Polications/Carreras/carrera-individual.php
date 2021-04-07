@@ -7,7 +7,7 @@
         <title>Polications - Inicio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../styles/Carrera.css">
+        <link rel="stylesheet" type="text/css" href="../styles/carrera-individual.css.css">
         <link rel="stylesheet" type="text/css" href="../styles/plantilla.css">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <link rel="shortcut icon" href="../images/icono_page.png" type="image/png">
