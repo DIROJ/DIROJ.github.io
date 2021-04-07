@@ -33,10 +33,10 @@
             require '../scripts/PHP/conec.php';
             $acentosR = $conexion->query("SET NAMES 'utf8'");
 
-            $sqlR = "SELECT `Logo`, `Short`, `Usuario`, `Color`, `Fecha`, `Boton`  FROM `lista-foros` WHERE Nombre = '$tituloR' ";
+            $sqlR = "SELECT `Logo`, `Short`, `Usuario`, `Color`, `Fecha`, `Color-F`  FROM `lista-foros` WHERE Nombre = '$tituloR' ";
             $ejecuR = mysqli_query($conexion, $sqlR);
             
-            global $fechaR, $usuarioR, $logoR, $colorR, $shortR, $botonR;
+            global $fechaR, $usuarioR, $logoR, $colorR, $shortR, $botonR, $colorf;
 
             $infor=mysqli_fetch_array($ejecuR);
 
@@ -45,7 +45,7 @@
                 $colorR    = $infor ["Color"]; 
                 $shortR    = $infor ["Short"];
                 $fechaR    = $infor ["Fecha"];
-                $botonR    = $infor ["Boton"];
+                $colorF    = $infor ["Color-F"];
         
         ?>
 
@@ -81,7 +81,8 @@
 
             <p id="aqui">
                 <?php
-                require 'ejemplo.php'
+                require 'foros-individual-show.php';
+                mostrar($tituloR);
                 ?>
             </p>
             

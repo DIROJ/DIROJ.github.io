@@ -22,7 +22,7 @@ function Hola(comentario) {
   let parametros = {"Comentario":comentario};
   $.ajax({
    data: parametros,
-   url:'ejemplo2.php',
+   url:'foros-individual-com.php',
    type: 'post',
    beforeSend: function () {
        $("#aqui").html("Procesando, espere por favor");

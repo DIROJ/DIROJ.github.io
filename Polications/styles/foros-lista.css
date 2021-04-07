@@ -38,11 +38,13 @@
 
 .list{
   margin-top: 15vh;
+  
 }
+
 li{
   list-style-type: none;
   margin-bottom: 5vh;
-}
+}  
 
 
 
@@ -63,39 +65,91 @@ li{
   color: #001021;
   
 }
-.mec{
+.inf-f{
+  background-color: rgba(0, 166, 255, 0.631);
+}
+.inf:hover{
+  color: rgba(0, 166, 255, 0.631);
+}
+
+.mec:hover{
+  color:gray;
+}
+.mec-f{
   background-color:gray;
 }
-.bec{
+
+.bec:hover{
+  color: rgb(197, 41, 72);
+}
+.bec-f{
     background-color: rgb(197, 41, 72);
 }
-.elec{
+
+.elec:hover{
+  color:rgb(187, 187, 23);
+}
+.elec-f{
     background-color: rgb(187, 187, 23);
 }
-.amb{
+
+.amb:hover{
+  color: rgb(9, 148, 9);
+}
+.amb-f{
     background-color: rgb(9, 148, 9);
 }
-.cons{
+
+.cons:hover{
+  color:rgb(153, 107, 46);
+}
+.cons-f{
     background-color: rgb(153, 107, 46);
 }
-.ali{
+
+.ali:hover{
+  color: orange;
+}
+.ali-f{
     background-color: orange;
 }
-.met{
+
+.met:hover{
+  color:red;
+}
+.met-f{
     background-color: red;
 }
-.plas{
+
+.plas:hover{
+  color:aquamarine;
+}
+.plas-f{
     background-color: aquamarine;
 }
-.proc{
+
+.proc:hover{
+  color:purple;
+}
+.proc-f{
     background-color: purple;
 }
-.serv{
+
+.serv:hover{
+  color:cadetblue;
+}
+.serv-f{
     background-color: cadetblue;
 }
-.prac{
+
+.prac:hover{
+  color:olivedrab;
+}
+.prac-f{
     background-color: olivedrab;
 }
+
+
 .ico-sm{
   font-size: 16vh;
   padding: 1vh;

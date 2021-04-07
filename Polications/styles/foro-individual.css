@@ -196,27 +196,28 @@ padding-left: 2vw;
 .mec{
   color:gray;
 }
-
-
+.inf{
+  color: rgba(0, 166, 255, 0.631);
+}
 .bec{
-    background-color: rgb(197, 41, 72);
+    color: rgb(197, 41, 72);
 }
 .elec{
-    background-color: rgb(187, 187, 23);
+    color: rgb(187, 187, 23);
 }
 .amb{
-    background-color: rgb(9, 148, 9);
+    color: rgb(9, 148, 9);
 }
 .cons{
-    background-color: rgb(153, 107, 46);
+    color: rgb(153, 107, 46);
 }
 
 .ali{
-    background-color: orange;
+    color: orange;
 }
 
 .met{
-    background-color: red;
+    color: red;
 }
 
 .plas{
@@ -224,16 +225,16 @@ padding-left: 2vw;
 }
 
 .proc{
-    background-color: purple;
+    color: purple;
 }
 
 
 .serv{
-    background-color: cadetblue;
+    color: cadetblue;
 }
 
 .prac{
-    background-color: olivedrab;
+    color: olivedrab;
 }
 
 

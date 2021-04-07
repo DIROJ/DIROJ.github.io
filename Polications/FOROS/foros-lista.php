@@ -50,7 +50,7 @@
             $sentencia = "SELECT * FROM `lista-foros` WHERE Short = '$tema'";
             $consulta = mysqli_query($conexion, $sentencia);
     
-            global $nombre, $tipo, $logo, $short, $color, $fecha, $usuario;
+            global $nombre, $tipo, $logo, $short, $color, $fecha, $usuario, $colorf;
             $iterador = 0;
     
             $sql = "SELECT COUNT(*) AS `results` FROM `lista-foros` WHERE Short = '$tema'";
@@ -67,13 +67,14 @@
                 $short  [$iterador] = $inf ["Short"];
                 $fecha  [$iterador] = $inf ["Fecha"]; 
                 $usuario[$iterador] = $inf ["Usuario"];   
+                $colorf [$iterador] = $inf ["Color-F"]; 
                 $iterador++;
             }
         ?>
 
         <?php
             echo '<div class="image-container">';
-            echo '  <div class="text ' . $color[0] . '">' . $tema. '</div>';
+            echo '  <div class="text ' . $colorf[0] . '">' . $tema. '</div>';
             echo '</div>';
         ?> 
         
@@ -98,7 +99,7 @@
                     echo '        </div>
                                 </a>';
                     echo '    </div>';
-                    echo '</li>';
+                echo '</li>';
                     $index++;
 
             }

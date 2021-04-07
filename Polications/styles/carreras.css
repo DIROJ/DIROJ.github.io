@@ -69,6 +69,9 @@ li ul{
   color: #001021;
   
 }
+.inf:hover{
+  color: rgba(0, 166, 255, 0.631);
+}
 .mec:hover{
     color:gray;
     transition: .5s;

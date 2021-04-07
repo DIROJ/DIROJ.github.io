@@ -44,7 +44,7 @@
             <header class="page-header header container-fluid">
                 <section class="description">
                   <h1>POLICATIONS</h1>
-                  <p>El sitio de Polications esta destinado para alumnos y aspirantes que
+                  <p class="des">El sitio de Polications esta destinado para alumnos y aspirantes que
                     desean ingresar a la Escuela Politécnica de Guadalajara. tiene la finalidad
                     de mejorar la comunicación entre los estudiantes de la comunidad de la Escuela
                     Politécnica de Guadalajara, resolver dudas, establecer y mejorar la comunicación,
@@ -53,7 +53,7 @@
                 </section>
             </header>
 
-            <a href="Foros/foros.php" class="vinc-f">
+            <a href="Foros/" class="vinc-f">
             <div class="card">
                 <button class="foro-b"><i class="fab fa-forumbee foro-i"></i></button>
                 <h1>Foros</h1>
@@ -63,7 +63,7 @@
                     para otros temas de interes como becas, servicio social, etc.</p>
             </div>
             </a>
-            <a href="FAQ/faq.php" class="vinc-p">
+            <a href="FAQ/" class="vinc-p">
             <div class="card">
             <button class="pregunta-b"><i class="fa fa-question pregunta-i"></i></i></button>
                 <h1>Preguntas Frecuentes</h1>
@@ -72,7 +72,7 @@
                     pueden ser del tipo: horarios de oficinas, cómo realizar trámites, etc.</p>
             </div>
             </a>
-            <a href="Carreras/carreras.php" class="vinc-c">
+            <a href="Carreras/" class="vinc-c">
             <div class="card">
                 <button class="carrera-b"><i class="fa fa-graduation-cap carrera-i"></i></i></button>
                 <h1>Carreras</h1>
@@ -82,7 +82,7 @@
                 </p>
             </div>
             </a>
-            <a href="Mapa/mapa.php" class="vinc-m">
+            <a href="Mapa/" class="vinc-m">
             <div class="card">
                 <button class="map-b"><i class="fa fa-map-marker-alt map-i"></i></i></button>
                 <h1>Mapa</h1>
