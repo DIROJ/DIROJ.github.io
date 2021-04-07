@@ -1,0 +1,181 @@
+
+.Descripcion{
+    width:90vw;
+    height:65vh;
+    text-align:center;
+    margin-block-start: 6%;
+    margin-left: 5%;
+    background-color:  #F7D09F;
+    float:none;
+    border-radius:20px;
+}
+.Titulo{
+    font-size: 500%;
+}
+.Izquierda{
+    width:38vw;
+    height:85vh;
+    text-align:center;
+    margin:4%;
+    float:left;
+    border: black outset 2px ;
+    border-radius:20px;
+    background: #FFFFFF;
+}
+.Derecha{
+    width:38vw;
+    height:85vh;
+    text-align:center;
+    margin:4%;
+    float:right;
+    border: black outset 2px ;
+    border-radius:20px;
+    background-color: #FFFFFF;
+}
+.Division{
+    width:91vw;
+    height:100vh;
+    text-align:left;
+    float:center;
+    margin-block-start: 6%;
+    margin-left: 5%;
+    border-radius:20px;
+    background:  #001021;
+}
+header{
+    font-size:300%;
+    color:#A30000;
+    text-align:center;
+}
+a{
+    float:left;
+    text-align:left;
+    margin-left: 4%;
+    color: blue;
+}
+ul, li {
+    list-style:none;
+    text-decoration:none;
+    display:block;
+    float:left;
+    margin:3%;
+    width:70%;
+    border-radius:20px;
+} 
+ol{
+    color: black;
+    text-align:justify;
+    display:block;
+    float:left;
+    
+}
+.solo{
+    color: black;
+    text-align:center;
+    display:block;
+    float:left;
+    margin-block-start: 3%;
+    margin-left: 4%;
+    font-size: medium;
+}
+.imagen{
+    float:left;
+    margin-right:1em
+}
+img{
+    height:18vh;
+    width:7vw;
+    margin:5px;
+    float: center;
+}
+.texto{
+    float:left;
+    text-align:left;
+    width:20vw;
+    height:21.33vh;
+    margin:7px;
+    color:black;
+}
+    @media screen and (max-width: 815px){
+        *{
+            margin-right: 0%;
+            padding: 0%;
+        }
+        .cuerpo{
+            margin-right: 5% ;
+            background-color: black;
+        }
+    .Derecha{
+        width: 30vw;
+        height: 85vh;
+        margin: 4%;
+    }
+    .Izquierda{
+        width: 30vw;
+        height: 50vh;
+        margin: 3%;
+    }
+    .texto{
+        width: 17vw;
+        float: right;
+        margin: 0%;
+        background-color: #A30000;
+    }
+    li{
+        width: 25vw;
+        text-align: right;
+        font-size: medium;
+        float: right;
+        margin: 2%;
+    }
+    header{
+        width: 29vw;
+        font-size: 110%;
+        text-align: center;
+        background-color: black;
+    }
+    .Titulo{
+        width: 60vw;
+        text-align: center;
+        float: center;
+        background-color: black;
+    }
+    img{
+        width: 7vw;
+        height: 15vh;
+        margin: 0%;
+        margin-block-end: 160%;
+        background-color: blue;
+    }
+    .imagen{
+        background-color: blue;
+    }
+    .Descripcion{
+        margin-block-start: 20%;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 70vw;
+    }
+    .Division{
+        margin-block-start: 20%;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 70vw;
+    }
+    a{
+        font-size: small;
+        text-align: justify;
+        margin: 2%;
+    }
+    .solo{
+        font-size: xx-small;
+        margin-block-start: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: black;
+    }
+  }
+  
+  @media all and (max-height: 815px) and (orientation: landscape){
+    
+  }
