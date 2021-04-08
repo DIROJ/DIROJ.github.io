@@ -1,12 +1,9 @@
 <?php
 
 //conexion con la base de datos
-$conexion = mysqli_connect("localhost", "root", "", "login");
+require 'conec.php';
 
-if(!$conn)
-{
-	die("No hay conexion:" .mysqli_connect_error());
-}
+
 
 //recuperacion del formulario HTML
 $usuario = $_POST["usuario"];
@@ -19,19 +16,20 @@ $telefono = $_POST["telefono"];
 
 //envio de la informacion a la tabla
   //sentencia sql
+ 
 
-  if(isset($_POST["BtnRegistrar"])){
-
-
-  $sql = "INSERT INTO 'formulario'('Usuario','Nombre','ApellidoP','ApellidoM','Password','Correo','Telefono') VALUES ('$usuario', '$nombre', '$apellidoP', '$apellidoM', '$pass', '$correo', '$telefono')  ";
+  $sql = "INSERT INTO `formulario`(`Usuario`,`Nombre`,`ApellidoP`,`ApellidoM`,`Password`,`Correo`,`Telefono`)
+   VALUES ('$usuario', '$nombre', '$apellidoP', '$apellidoM', '$pass', '$correo', '$telefono')";
 
   //ejecucion de la sentecia sql
-  $ejecucion = mysqli_querry ($conexion, $sql);
+  $ejecucion = mysqli_query ($conexion, $sql);
 
   if($ejecucion){
-      header("location: login.html");
+      header("location: sign_in.php");
+    }else{
+      echo 'ERROR';
     }
- }
+ 
 
 
 
