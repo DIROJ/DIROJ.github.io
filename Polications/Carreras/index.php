@@ -58,7 +58,7 @@
                     echo '<ul>';
             
                     echo '    <div class="tar">
-                                <a href="' . $href[$index] . '" class="' . $st[$index] . ' hv">';
+                                <a href="carrera-individual.php?name=' . $short[$index] . '" class="' . $st[$index] . ' hv">';
                     echo '        <div class="ico-cont"> '; 
                     echo '          <i class="' . $logo[$index] . '"></i>';
                     echo '        </div>';

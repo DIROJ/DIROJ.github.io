@@ -6,7 +6,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans';
 	background: #E5E5E5;
 }
                                                        /*#3E78B2, #1766B5, #001021, #FFFFFF, #E6EDF0, #F7D09F, #A30000 ;*/
@@ -21,10 +21,11 @@ main {
 
 
 header{
-	margin: 0;
+	margin: 10vh 0vw 10vh 0vw;
+	font-weight: bolder;
 	text-align: center;
-	font-family: 'Times New Roman', Times, serif;
-    width: 100vw;
+	font-family: 'Open Sans';
+    width: 99.45vw;
 	height: 15vh;
     background-color: #3E78B2;
 }
@@ -184,4 +185,9 @@ h2{
 	.formulario__btn {
 		width: 100%;
 	}
+	header{height: 23vh; width: 100vw;}
+}
+
+@media all and (max-height: 800px) and (orientation: landscape){
+    header{margin:20vh 0vh 10vh 0vh; height: 40vh; width: 100vw;}
 }

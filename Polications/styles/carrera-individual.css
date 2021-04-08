@@ -1,12 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
 .Descripcion{
     width:90vw;
-    height:65vh;
+    height: fit-content;
     text-align:center;
     margin-block-start: 6%;
     margin-left: 5%;
     background-color:  #F7D09F;
-    float:none;
+    float:left;
     border-radius:20px;
 }
 .Titulo{
@@ -27,7 +31,7 @@
     height:85vh;
     text-align:center;
     margin:4%;
-    float:right;
+    float:left;
     border: black outset 2px ;
     border-radius:20px;
     background-color: #FFFFFF;
@@ -36,7 +40,7 @@
     width:91vw;
     height:100vh;
     text-align:left;
-    float:center;
+    float:left;
     margin-block-start: 6%;
     margin-left: 5%;
     border-radius:20px;
@@ -47,37 +51,43 @@ header{
     color:#A30000;
     text-align:center;
 }
-a{
+.sem{
     float:left;
     text-align:left;
     margin-left: 4%;
     color: blue;
 }
-ul, li {
+.lista{
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    margin: 7vh 0vw 0vh 0vw;
+    font-size: 1.8vh;
+}
+li {
     list-style:none;
     text-decoration:none;
-    display:block;
     float:left;
     margin:3%;
-    width:70%;
-    border-radius:20px;
-} 
-ol{
-    color: black;
-    text-align:justify;
-    display:block;
-    float:left;
-    
+    width: 30vw;
 }
-.solo{
+.presen{
+    width: 80vw;
+    height: fit-content;
+    margin: 6vh 10vw 0vh 3.5vw;
+    font-size: large;
+}
+.act{
     color: black;
-    text-align:center;
-    display:block;
+    width: 60vw;
+    height: fit-content;
     float:left;
-    margin-block-start: 3%;
-    margin-left: 4%;
+    text-align: left;
     font-size: medium;
+    font-family: 'Open Sans';
+    margin:  5vh 0vw 5vh 4vw;
 }
+
 .imagen{
     float:left;
     margin-right:1em
@@ -85,97 +95,117 @@ ol{
 img{
     height:18vh;
     width:7vw;
-    margin:5px;
-    float: center;
+    margin: 4vh 0vw 0vh 0vw;
+    float: left;
 }
 .texto{
     float:left;
     text-align:left;
-    width:20vw;
-    height:21.33vh;
-    margin:7px;
+    width:27vw;
+    height:18vh;
+    margin: 4vh 0vw 0vh 0vw;
     color:black;
 }
-    @media screen and (max-width: 815px){
-        *{
-            margin-right: 0%;
-            padding: 0%;
-        }
-        .cuerpo{
-            margin-right: 5% ;
-            background-color: black;
-        }
+
+    @media screen and (max-width: 815px) and (max-width: 1080px){
+    .Descripcion{
+        width: 90vw;
+        height: 100vh;
+        float: left;
+    }
+    .Division{
+        float: left;
+        height: fit-content;
+    }
+    .presen{
+        width: 80vw;
+        height: 25vh;
+        float: left;
+        margin: 0vh 5vw 0vh 5vw;
+        font-size: medium;
+    }
+    .solo{
+        width: 80vw;
+        height: 50vh;
+        float: left;
+        margin: 0vh 5vw 0vh 5vw;
+        font-size: medium;
+    }
     .Derecha{
-        width: 30vw;
-        height: 85vh;
+        width: 85vw;
+        height: fit-content;
         margin: 4%;
     }
     .Izquierda{
-        width: 30vw;
-        height: 50vh;
+        width: 85vw;
+        height: fit-content;
         margin: 3%;
     }
-    .texto{
-        width: 17vw;
-        float: right;
-        margin: 0%;
-        background-color: #A30000;
-    }
-    li{
-        width: 25vw;
-        text-align: right;
-        font-size: medium;
-        float: right;
-        margin: 2%;
-    }
-    header{
-        width: 29vw;
-        font-size: 110%;
-        text-align: center;
-        background-color: black;
-    }
-    .Titulo{
+    .sem{
         width: 60vw;
+        height: fit-content;
+        margin: 1.5vh 0vh 0vh 4vh;
         text-align: center;
-        float: center;
-        background-color: black;
+
     }
-    img{
-        width: 7vw;
-        height: 15vh;
-        margin: 0%;
-        margin-block-end: 160%;
-        background-color: blue;
+    .texto{
+        width: 40vw;
+        float: right;
+        margin: 2vh 0vh 0vh 0vh;
+        background-color: #A30000;
+        height: 22vh;
     }
     .imagen{
         background-color: blue;
+        width: 40vw;
+        margin: 2vh 0vh 0vh 0vh;
     }
-    .Descripcion{
-        margin-block-start: 20%;
-        margin-left: 0%;
-        margin-right: 0%;
-        width: 70vw;
-    }
-    .Division{
-        margin-block-start: 20%;
-        margin-left: 0%;
-        margin-right: 0%;
-        width: 70vw;
-    }
-    a{
-        font-size: small;
-        text-align: justify;
-        margin: 2%;
-    }
-    .solo{
-        font-size: xx-small;
-        margin-block-start: 0%;
-        margin-left: 5%;
-        margin-right: 5%;
-        color: black;
-    }
+    
+    
+    
+    
   }
   
-  @media all and (max-height: 815px) and (orientation: landscape){
-    
+  @media all and (max-height: 815px) and (max-width: 1080px) and (orientation: landscape){
+    .cuerpo{
+        background-color: #001021;
+    }
+    .Descripcion{
+        width: 90vw;
+        height: 130vh;
+        float: left;
+    }
+    .Division{
+        height:fit-content;
+        
+    }
+    .Izquierda{
+        height: fit-content;
+    }
+    .sem{
+        width: 70vw;
+        height: fit-content;
+        margin: 1.5vh 0vh 0vh 9vh;
+        text-align: center;
+        float: left;
+    }
+    .Derecha{
+        width: 85vw;
+        height: fit-content;
+        margin: 4%;
+    }
+    .imagen{
+        background-color: blue;
+        height: 40vh;
+        width: 18vw;
+        margin: 2vh 0vh 0vh 0vh;
+    }
+    .texto{
+        width: 65vw;
+        float: right;
+        margin: 2vh 0vh 0vh 0vh;
+        background-color: #A30000;
+        height:40vh;
+    }
+
   }
