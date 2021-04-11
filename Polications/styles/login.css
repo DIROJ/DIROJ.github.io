@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+#LOGO{
+    width: 140px;
+}
+
+body {
+  background:  #3E78B2;
+  display: flex;
+  min-height: 100vh;
+}
+
+form {
+
+  margin: auto;
+  width: 70%;
+  max-width: 900px;
+  background: #E5E5E5;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+  
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Arial Black;
+}
+
+#Datos{
+
+  padding: 10px;
+  width: 42%;
+  margin: 30px 0;
+  font-size: 20px;
+
+}
+
+#Ingresar{
+    
+    padding: 10px;
+    width: 20%;
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+  background: linear-gradient(#408cff, #0072bb);
+  border: 0;
+  color: white;
+  opacity: 0.85;
+  cursor: pointer;
+  font-family: Arial;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+input[type="submit"]:hover {
+  opacity: 1;
+
+  
+}
+
+input[type="submit"]:active {
+  transform: scale(0.95);
+
+}
+
+@media (max-width:768px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media (max-width:480px) {
+  form {
+    width: 100%;
+  }
+}
+
+p{
+  font-size: 20px;
+}
