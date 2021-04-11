@@ -48,6 +48,21 @@
             $infor=mysqli_fetch_array($ejecuC);
                 $presen = $infor ["presentacion"];
                 $desc   = $infor ["descripcion"];
+
+
+            $sqlM = "SELECT `numerosemestre`, `maestro`, `correo`, `links` FROM `info-maestros` WHERE namecarrera = '$tituloR'";
+            $ejecuM = mysqli_query($conexion, $sqlM);
+            
+            global $no, $maestro, $correo, $link, $ind;
+            $ind = 0;
+            while ($inforM=mysqli_fetch_array($ejecuM)){
+            
+                $no     [$ind] = $inforM ["numerosemestre"];
+                $maestro[$ind] = $inforM ["maestro"];
+                $correo [$ind] = $inforM ["correo"];
+                $link   [$ind] = $inforM ["links"];
+                $ind++;
+            }
         ?>
           
 
@@ -55,43 +70,42 @@
 
             <div class = "Descripcion">
                 <?php
-                 echo '    <header class="Titulo">' . $tituloR . '</header>';
-                 echo '        <p class="presen">' . $presen . '</p>';
-                 
-                 echo '        <pre class="act">' . $desc . '</pre>';
-                 
-                 echo '    </div>';
-                 
+                    echo '    <header class="Titulo">' . $tituloR . '</header>';
+                    echo '        <p class="presen">' . $presen . '</p>';
 
-                 echo '    <div class= "Division">';
-                 echo '        <div class = "Izquierda">';
-                 echo '            <header>Semestres</header>';
-                 echo '            <ul class="lista">';
-                 echo '                <li class="sem"><a href="">Semestre 1</a></li>';
-                 echo '                <li class="sem"><a href="">Semestre 2</a></li>';
-                 echo '                <li class="sem"><a href="">Semestre 3</a></li>';
-                 echo '                <li class="sem"><a href="">Semestre 4</a></li>';
-                 echo '                <li class="sem"><a href="">Semestre 5</a></li>';
-                 echo '                <li class="sem"><a href="">Semestre 6</a></li>';
-                 echo '                <li class="sem"><a href="">Semestre 7</a></li>';
-                 echo '                <li class="sem"><a href="">Semestre 8</a></li>';
-                 echo '            </ul>';
-                 echo '        </div>';
-                 
+                    echo '        <pre class="act">' . $desc . '</pre>';
 
-                 echo '        <div class = "Derecha">';
-                 echo '            <header>Maestros Encargados</header>';
-    
-                 echo '            <div class="imagen"><img src="../images/tpi.jpg"></div>';
-                 echo '            <div class="texto"><p></p><p>A ese wey no lo conozno</p><br></div>';
-    
-                 echo '            <div class="imagen"><img src="../images/tpi.jpg"></div>';
-                 echo '            <div class="texto">A ese wey no lo conozno</div>';
-    
-                 echo '            <div class="imagen"><img src="../images/tpi.jpg"></div>';
-                 echo '            <div class="texto">A ese wey no lo conozno</div>';
-                 echo '        </div>';
-                 echo '    </div>';
+                    echo '    </div>';
+
+                    echo '    <div class= "Division">';
+                    echo '        <div class = "Izquierda">';
+                    echo '            <header>Semestres</header>';
+                    echo '            <ul class="lista">';
+                    $contador = 0;
+                    while($contador < $no[0]){
+                    echo '                <li class="sem"><a href="">Semestre '.($contador+1). '</a></li>';
+                    $contador++;
+                    }
+                    echo '            </ul>';
+                    echo '        </div>';
+
+                    echo '      <div class = "Derecha">';
+                    echo '          <header>Coordinador</header>';
+                    $con = 0;
+                    while($con < $ind){
+                    echo '              <div class="imagen">
+                                            <img src="' . $link[$con] . '">
+                                        </div>';
+                    echo '              <div class="texto">
+                                            <p>' . $maestro[$con] . '</p>
+                                            <p>Correo Electrónico: ' . $correo[$con] . '</p>
+                                        </div>';
+                                        $con++;
+                    }
+                    echo '      </div>';
+                   
+
+                
                 ?>
         </main>
         

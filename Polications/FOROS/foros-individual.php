@@ -3,6 +3,7 @@
 
     <head> 
         <?php
+        global $tituloR;
             $tituloR = $_GET["titulo"]; 
             echo '<title>' . $tituloR . '</title>';
         ?>
@@ -63,7 +64,7 @@
                 
                 echo '<div class="tema">';
                 echo '    <i class="' . $logoR . ' ' . $colorR . '"></i>';
-                echo '    <h6 class="' . $colorR . '">' . $shortR . '</h6> ';
+                echo '    <h6 class="' . $colorR . '" id ="theme">' . $shortR . '</h6> ';
                 echo '</div>';
                 echo '<p class="usuario">' . $usuarioR . '</p>';
                 echo '<p class="tiempo">' . $fechaR . '</p>';
@@ -72,17 +73,16 @@
 
             <form action="" method="POST" class="comment-add" enctype="multipart/form-data"> 
                 <!--<label for="genero" class="letra-form">Género</label><br>-->
-                <textarea type="text" name="comentario" required class="input-comment" maxlength="512"
-                 placeholder="Agregar un comentario" rows="6" cols="133" id="comentario"></textarea>
-                
-                <input type="submit" name="subir" value="Comentar" class="comentar" id="comentar" onclick="Hola($('#comentario').val())">
+                <textarea type="text" required class="input-comment" maxlength="512"
+                 placeholder="Agregar un comentario" rows="6" cols="133" id="comentario"></textarea> 
+                <input type="submit" name="subir" value="Comentar" class="comentar" id="comentar" onclick="Hola($('#comentario').val(), $('#titulo').text(), $('#theme').text())">
                  
             </form>
 
             <p id="aqui">
                 <?php
-                require 'foros-individual-show.php';
-                mostrar($tituloR);
+                    require 'foros-individual-show.php';
+                    mostrar($tituloR);
                 ?>
             </p>
             

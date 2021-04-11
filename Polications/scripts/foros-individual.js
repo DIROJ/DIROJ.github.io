@@ -18,8 +18,8 @@ $(document).ready(function () {
   });
 });
 
-function Hola(comentario) {
-  let parametros = {"Comentario":comentario};
+function Hola(comentario, titulo, tema) {
+  let parametros = {"Comentario":comentario,"Titulo":titulo,"Tema":tema};
   $.ajax({
    data: parametros,
    url:'foros-individual-com.php',

@@ -29,7 +29,7 @@
         <script src = "../bootstrap/js/bootstrap.min.js" ></script>
 
 
-        <?php 
+        <?php
             require '../scripts/PHP/nav.php';
             nav();
         ?>

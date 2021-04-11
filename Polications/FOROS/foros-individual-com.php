@@ -4,10 +4,14 @@
     require '../scripts/PHP/conec.php';
     $acentos = $conexion->query("SET NAMES 'utf8'");
 
+    session_start();
+    $user = $_SESSION["usuario"];
     $comentario = $_POST["Comentario"];
-
-    $sqlIN = "INSERT INTO `lorem ipsum 1`(`Usuario`, `Texto`, `Tiempo`, `Tipo`, `Tema`)
-       VALUES ('unusuario','$comentario', CURRENT_TIME,'Comentario','TPMI')";
+    $titulo = $_POST["Titulo"];
+    $tema = $_POST["Tema"];
+    
+    $sqlIN = "INSERT INTO `$titulo`(`Usuario`, `Texto`, `Tiempo`, `Tipo`, `Tema`)
+       VALUES ('$user','$comentario', CURRENT_TIME,'Comentario','$tema')";
 
        //ejecucuion de la sentencia
        $ejecucionIN=mysqli_query($conexion, $sqlIN);
@@ -18,14 +22,14 @@
     /*-------------------------------------------------------------------------------------*/
     
     
-    $sql = "SELECT `Usuario`, `Texto`, `Tiempo`, `Tipo`, `Tema` FROM `lorem ipsum 1`";
+    $sql = "SELECT `Usuario`, `Texto`, `Tiempo`, `Tipo`, `Tema` FROM `$titulo`";
     $ejecu = mysqli_query($conexion, $sql);
 
 
     global $Usuario, $Texto, $Tiempo, $Tipo, $Tema, $arr_com, $iterador;
     $iterador = 0;
 
-    $sql_com = "SELECT COUNT(*) AS `resultscom` FROM `lorem ipsum 1`";
+    $sql_com = "SELECT COUNT(*) AS `resultscom` FROM `$titulo`";
     $eje_com = mysqli_query($conexion, $sql_com);
     $arr_com = mysqli_fetch_array($eje_com);
 

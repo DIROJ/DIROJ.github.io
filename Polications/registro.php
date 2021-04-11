@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
     <header class="header" id="header">
 		<br>
 		<h1>Polications</h1>
-		<h2>Regristro de nuevo Usuario</h2>
+		<h2>Registro de nuevo Usuario</h2>
 	</header>
 
 		
@@ -43,7 +43,7 @@
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Usuario</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Usuario117">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" required placeholder="Usuario117">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
@@ -53,7 +53,7 @@
 			<div class="formulario__grupo" id="grupo__nombre">
 				<label for="nombre" class="formulario__label">Nombre</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Emmanuel Ismael">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" required placeholder="Emmanuel Ismael">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El Nombre tiene que ser de 4 a 16 dígitos y solo puede contener espacio, numeros y letras.</p>
@@ -63,7 +63,7 @@
 			<div class="formulario__grupo" id="grupo__apellidoP">
 				<label for="apellidoP" class="formulario__label">Apellido Paterno</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="apellidoP" id="apellidoP" placeholder="Paterno">
+					<input type="text" class="formulario__input" name="apellidoP" id="apellidoP" required placeholder="Paterno">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El Apellido tiene que ser de 4 a 16 dígitos y solo puede contener espacio, numeros y letras.</p>
@@ -73,7 +73,7 @@
 			<div class="formulario__grupo" id="grupo__apellidoM">
 				<label for="apellidoM" class="formulario__label">Apellido Materno</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="apellidoM" id="apellidoM" placeholder="Materno">
+					<input type="text" class="formulario__input" name="apellidoM" id="apellidoM" required placeholder="Materno">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener espacio, numeros y letras.</p>
@@ -83,7 +83,7 @@
 			<div class="formulario__grupo" id="grupo__password">
 				<label for="password" class="formulario__label">Contraseña</label>
 				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password" id="password">
+					<input type="password" class="formulario__input" required name="password" id="password">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
@@ -93,7 +93,7 @@
 			<div class="formulario__grupo" id="grupo__password2">
 				<label for="password2" class="formulario__label">Repetir Contraseña</label>
 				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password2" id="password2">
+					<input type="password" class="formulario__input" required name="password2" id="password2">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
@@ -103,7 +103,7 @@
 			<div class="formulario__grupo" id="grupo__correo">
 				<label for="correo" class="formulario__label">Correo Electrónico</label>
 				<div class="formulario__grupo-input">
-					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<input type="email" class="formulario__input" name="correo" id="correo" required placeholder="correo@correo.com">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
@@ -113,7 +113,7 @@
 			<div class="formulario__grupo" id="grupo__telefono">
 				<label for="telefono" class="formulario__label">Teléfono</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" required placeholder="4491234567">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>

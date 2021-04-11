@@ -34,9 +34,16 @@
         <script src = "../bootstrap/js/bootstrap.min.js" ></script>
 
 
-        <?php 
-            require '../scripts/PHP/nav.php';
-            nav();
+        <?php  
+            session_start();
+            $_SESSION["usuario"] = 'Administrador';
+            if (isset($_SESSION["usuario"])){
+                require '../scripts/PHP/nav-user.php';
+                nav();
+            }else{
+                require '../scripts/PHP/nav.php';
+                nav();
+            }
             
         ?>
 
@@ -76,9 +83,21 @@
             echo '<div class="image-container">';
             echo '  <div class="text ' . $colorf[0] . '">' . $tema. '</div>';
             echo '</div>';
-        ?> 
         
-        <ul class="list">
+        
+        if(isset($_SESSION["usuario"])){
+            $username =$_SESSION["usuario"];
+            $sql_u = "SELECT `Rol` FROM `usuarios` WHERE Usuario = '$username'";
+            $consult_u = mysqli_query($conexion, $sql_u);
+            $res_user = mysqli_fetch_array($consult_u);
+
+            if($res_user[0] == 'Administrador'){
+            echo '<button class="add ' . $colorf[0] . ' ' . $color[0] . '" onclick="add_info()">Agregar</button>';
+            }
+        }
+
+        echo '<ul class="list">';
+        ?> 
 
         <?php
             $index = 0;
@@ -114,9 +133,37 @@
         ?>
 
 
-        <!--<script src="../scripts/foros.js"></script>-->
+        <script src="../scripts/foros-lista.js"></script>
         <script src="../scripts/plantilla.js"></script>
 
+        <div id="demo-modal" class="modal fade">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span>x</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h4>Nombre del Foro</h4>
+                        <p></p>
+                    <div class="input-group">
+                        <form action="../scripts/PHP/foros-add.php" method="POST" name="new-foro" class="input-group-append" >
+                        <?php
+                            echo '<input type="hidden" name="tipo"    value="' .$tipo[0].   '"    >'; 
+                            echo '<input type="hidden" name="logo"    value="' .$logo[0].   '"    >';
+                            echo '<input type="hidden" name="short"   value="' .$short[0].  '"   >';   
+                            echo '<input type="hidden" name="color"   value="' .$color[0].  '"   >';
+                            echo '<input type="hidden" name="color-f" value="' .$colorf[0]. '"  >';
+                        ?>
+                            <input type="text" class="in-mod" name="foro_name" required maxlength="64">
+                            <input type="submit" class="btn-mod" value="Agregar">
+                        </form>
+                    </div>
+</div>
+                </div>
+            </div>
+        </div>
         
 
     </body>
