@@ -27,8 +27,14 @@
     <body class="cuerpo">
 
         <?php 
-            require '../scripts/PHP/nav.php';
-            nav();
+            session_start();
+            if (isset($_SESSION["usuario"])){
+                require '../scripts/PHP/nav-user.php';
+                nav();
+            }else{
+                require '../scripts/PHP/nav.php';
+                nav();
+            }
         ?>
 
 

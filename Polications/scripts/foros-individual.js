@@ -33,3 +33,13 @@ function Hola(comentario, titulo, tema) {
    }
   });
 }
+
+
+
+function del() {
+    $('#modal-del').modal();
+}
+
+function remove() {
+    $('#modal-remove').modal(); 
+}

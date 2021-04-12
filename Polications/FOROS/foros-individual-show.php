@@ -39,4 +39,6 @@
             echo 'Este foro aún no tiene comentarios';
         }
     }
+
+    
 ?>

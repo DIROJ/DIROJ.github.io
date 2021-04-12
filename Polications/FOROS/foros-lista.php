@@ -36,7 +36,6 @@
 
         <?php  
             session_start();
-            $_SESSION["usuario"] = 'Administrador';
             if (isset($_SESSION["usuario"])){
                 require '../scripts/PHP/nav-user.php';
                 nav();
@@ -86,20 +85,61 @@
         
         
         if(isset($_SESSION["usuario"])){
-            $username =$_SESSION["usuario"];
-            $sql_u = "SELECT `Rol` FROM `usuarios` WHERE Usuario = '$username'";
-            $consult_u = mysqli_query($conexion, $sql_u);
-            $res_user = mysqli_fetch_array($consult_u);
+            require '../scripts/PHP/consulta-user.php';
+                if (verificar_rol($_SESSION["usuario"]) == 'Administrador'){
+                    echo '<button class="add ' . $colorf[0] . ' ' . $color[0] . '" onclick="add_info()">Agregar</button>';
+                    echo '<ul class="list">';
+                    $index = 0;
+            
+                    while ($index < $arr['results']){
 
-            if($res_user[0] == 'Administrador'){
-            echo '<button class="add ' . $colorf[0] . ' ' . $color[0] . '" onclick="add_info()">Agregar</button>';
-            }
-        }
+                    
+                        echo '<li>';
+                    
+                            echo '    <div class="tar">';
+                            echo '      <a href="foros-individual-admin.php?titulo=' . $nombre[$index] . '" class="' . $color[$index] . ' hv">';
+                            echo '        <div class="ico-cont"> '; 
+                            echo '          <i class="' . $logo[$index]  . '"></i>';
+                            echo '        </div>';
+                            echo '        <div class="tarjeta-cuerpo">';
+                            echo '          <h2>' . $nombre[$index] . '</h2>';
+                            echo '        </div>';
+                            echo '      </a>';
+                            echo '    </div>';
+                        echo '</li>';
+                            $index++;
+
+                    }
+                }else if(verificar_rol($_SESSION["usuario"]) == 'Usuario'){
+                    echo '<ul class="list">';
+                    $index = 0;
+            
+                    while ($index < $arr['results']){
+
+                    
+                        echo '<li>';
+                    
+                            echo '    <div class="tar">';
+                            echo '      <a href="foros-individual-user.php?titulo=' . $nombre[$index] . '" class="' . $color[$index] . ' hv">';
+                            echo '        <div class="ico-cont"> '; 
+                            echo '          <i class="' . $logo[$index]  . '"></i>';
+                            echo '        </div>';
+                            echo '        <div class="tarjeta-cuerpo">';
+                            echo '          <h2>' . $nombre[$index] . '</h2>';
+                            echo '        </div>';
+                            echo '      </a>';
+                            echo '    </div>';
+                        echo '</li>';
+                            $index++;
+                    }
+                }
+
+        }else{
 
         echo '<ul class="list">';
-        ?> 
+        
 
-        <?php
+        
             $index = 0;
             
             while ($index < $arr['results']){
@@ -107,21 +147,21 @@
 
                 echo '<li>';
 
-                    echo '    <div class="tar">
-                                <a href=" foros-individual.php?titulo=' . $nombre[$index] . '" class="' . $color[$index] . ' hv">';
-
+                    echo '    <div class="tar">';
+                    echo '      <a href="foros-individual.php?titulo=' . $nombre[$index] . '" class="' . $color[$index] . ' hv">';
                     echo '        <div class="ico-cont"> '; 
                     echo '          <i class="' . $logo[$index]  . '"></i>';
                     echo '        </div>';
                     echo '        <div class="tarjeta-cuerpo">';
                     echo '          <h2>' . $nombre[$index] . '</h2>';
-                    echo '        </div>
-                                </a>';
+                    echo '        </div>';
+                    echo '      </a>';
                     echo '    </div>';
                 echo '</li>';
                     $index++;
 
             }
+        }
         ?>
 
         </ul>
@@ -146,7 +186,7 @@
                     </div>
                     <div class="modal-body text-center">
                         <h4>Nombre del Foro</h4>
-                        <p></p>
+                        <p>64 caracteres máximo</p>
                     <div class="input-group">
                         <form action="../scripts/PHP/foros-add.php" method="POST" name="new-foro" class="input-group-append" >
                         <?php
@@ -160,10 +200,11 @@
                             <input type="submit" class="btn-mod" value="Agregar">
                         </form>
                     </div>
-</div>
+                    </div>
                 </div>
             </div>
         </div>
+        
         
 
     </body>

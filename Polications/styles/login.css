@@ -5,30 +5,37 @@
   box-sizing: border-box;
 }
 
-:focus {
-  outline: none;
-}
+
 
 #LOGO{
     width: 140px;
 }
 
 body {
-  background:  #3E78B2;
-  display: flex;
+  background-color:#3E78B2;
   min-height: 100vh;
+  width: 99.5vw;
+  float: left;
+}
+.principal{
+  background-color: transparent ;
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin: auto;
+  float: center;
 }
 
 form {
-
-  margin: auto;
-  width: 70%;
+  float: left;
+  width: 70vw;
+  height: fit-content ;
+  margin: 20vh 1vw 20vh 1vw;
   max-width: 900px;
-  background: #E5E5E5;
+  background: #f6f6f6;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  text-align: center;
-  
+  text-align: center; 
 }
 
 h2 {

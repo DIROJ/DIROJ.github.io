@@ -32,7 +32,6 @@
 
         <?php 
                 session_start();
-                
                 if (isset($_SESSION["usuario"])){
                     require 'scripts/PHP/nav-user.php';
                     nav();

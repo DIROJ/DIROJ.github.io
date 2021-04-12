@@ -81,11 +81,10 @@ li{
 .tar:hover{
   text-decoration: none;
   box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.7);
-  
 }
 .hv{
   color: #001021;
-  
+  text-decoration: none;
 }
 .inf-f{
   background-color: rgba(0, 166, 255, 0.631);
@@ -202,6 +201,13 @@ li{
   height: 20vh;
   padding: 2vh;
 }
+.tarjeta-cuerpo h2{
+    width: fit-content;
+    float: left;
+} 
+
+
+
 .in-mod{
   width: 32vw;
   height: 5vh;

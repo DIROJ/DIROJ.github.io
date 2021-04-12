@@ -76,7 +76,13 @@
                 ?>
             </section>
             
-            
+            <form action="" method="POST" class="comment-add" enctype="multipart/form-data"> 
+                <!--<label for="genero" class="letra-form">Género</label><br>-->
+                <textarea type="text" required class="input-comment" maxlength="512"
+                 placeholder="Agregar un comentario" rows="6" cols="133" id="comentario"></textarea> 
+                <input type="submit" name="subir" value="Comentar" class="comentar" id="comentar" onclick="Hola($('#comentario').val(), $('#titulo').text(), $('#theme').text())">
+                 
+            </form>
 
             <p id="aqui">
                 <?php

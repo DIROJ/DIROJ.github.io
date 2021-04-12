@@ -11,7 +11,7 @@ function nav(){
     echo '        <a href=""></a>';
     echo '        <a href=""></a>';
     echo '        <a href=""></a>';
-    echo '        <a href="/GIT/DIROJ.github.io/Polications/sign_in.php">Inicio de Sesión</a>';
+    echo '        <a href="/GIT/DIROJ.github.io/Polications/login.php">Inicio de Sesión</a>';
     echo '        <a href="/GIT/DIROJ.github.io/Polications/registro.php">Registro</a>';
     echo '</div>';
     echo '</nav>';

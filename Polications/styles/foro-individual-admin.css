@@ -68,6 +68,11 @@ li{
   padding: 2vh ;
   word-wrap: break-word;
   color: #A30000;
+  font-size: 3.4vh;
+  
+}
+.titulo:focus{
+    outline-color: #1766B5;
 }
 
 .tema{
@@ -137,6 +142,7 @@ li{
   border-radius: 5px;
   margin:1vh 0vw .5vh 1.5vw;
   border: none;
+  background-color: transparent;
 }
 .liga:hover{
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.5);
@@ -229,11 +235,28 @@ li{
 }
 .comment-time{
   font-size: small;
-  width: 13vw;
+  width: 10vw;
   height: fit-content;
   float: right;
   padding: 2vh 2vh 0vh 2vh;
 }
+.cerrar, .btn-cerrar{
+    float: right;
+    font-size: 3vh;
+    color: #1766B5;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+}
+.cerrar:hover{
+    color: #A30000;
+    cursor: pointer;
+}
+.btn-cerrar:focus{
+    outline: none;
+}
+
 .comment{
   width: 60vw;
   height: fit-content;
