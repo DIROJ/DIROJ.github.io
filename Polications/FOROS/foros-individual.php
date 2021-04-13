@@ -97,8 +97,8 @@
         ?>
 
 
-        <script type="text/javascript" src="../scripts/foros-individual.js"></script>
-        <script src="../scripts/plantilla.js"></script>
+        <script type="text/javascript" src="../scripts/js/foros-individual.js"></script>
+        <script src="../scripts/js/plantilla.js"></script>
 
         
 

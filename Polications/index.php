@@ -109,8 +109,8 @@
         ?>
 
 
-        <script src="scripts/index.js"></script>
-        <script src="scripts/plantilla.js"></script>
+        <script src="scripts/js/index.js"></script>
+        <script src="scripts/js/plantilla.js"></script>
 
         
 

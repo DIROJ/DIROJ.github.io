@@ -60,7 +60,7 @@
         footer();
     ?>     
 
-    <script src="scripts/plantilla.js"></script>
+    <script src="scripts/js/plantilla.js"></script>
 
  </body>
 

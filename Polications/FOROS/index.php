@@ -146,7 +146,7 @@
 
 
         <!--<script src="../scripts/foros.js"></script>-->
-        <script src="../scripts/plantilla.js"></script>
+        <script src="../scripts/js/plantilla.js"></script>
 
         
 

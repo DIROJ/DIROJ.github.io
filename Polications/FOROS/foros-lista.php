@@ -173,8 +173,8 @@
         ?>
 
 
-        <script src="../scripts/foros-lista.js"></script>
-        <script src="../scripts/plantilla.js"></script>
+        <script src="../scripts/js/foros-lista.js"></script>
+        <script src="../scripts/js/plantilla.js"></script>
 
         <div id="demo-modal" class="modal fade">
             <div class="modal-dialog modal-lg modal-dialog-centered">

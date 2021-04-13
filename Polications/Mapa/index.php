@@ -49,8 +49,8 @@
             footer();
         ?>
 
-        <script src="../scripts/mapa.js"></script>
-        <script src="../scripts/plantilla.js"></script>
+        <script src="../scripts/js/mapa.js"></script>
+        <script src="../scripts/js/plantilla.js"></script>
 
     </body>
     

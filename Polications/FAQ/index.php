@@ -79,8 +79,8 @@
         ?>
 
 
-        <script src="../scripts/faq.js"></script>
-        <script src="../scripts/plantilla.js"></script>
+        <script src="../scripts/js/faq.js"></script>
+        <script src="../scripts/js/plantilla.js"></script>
 
         
 

@@ -148,8 +148,8 @@
             footer();
     ?>
 
-	<script src="scripts/registro.js"></script>
-	<script src="scripts/plantilla.js"></script>
+	<script src="scripts/js/registro.js"></script>
+	<script src="scripts/js/plantilla.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
         
