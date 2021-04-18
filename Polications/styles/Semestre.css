@@ -1,0 +1,146 @@
+header{
+    font-size: 300%;
+    color: #A30000;
+}
+.titulo{
+    width: 40vw;
+    height: 10vh;
+    margin-block-start: 2%;
+    margin-left: 25%;
+    border: black outset 2px ;
+    border-radius:20px;
+    background-color: chocolate;
+    text-align: center;
+    font-size: 230%;
+    color: #A30000;
+}
+.text{
+    width: 75vw;
+    height: 22vh;
+    margin-block-start: 1.3%;
+    margin-left: 2.5%;
+    border: black outset 2px ;
+    border-radius:20px;
+    background: cornflowerblue;
+}
+p{
+    color: black;
+    text-align: center;
+    float: left;
+    margin-left: 1%;
+    width: 44vw;
+    background: lightblue;
+}
+.Descripcion{
+    width: 80vw;
+    height: 40vh;
+    margin: 6%;
+    margin-left: 10%;
+    background: lightseagreen;
+    float: center;
+    border: black outset 2px ;
+    border-radius:20px;
+}
+.Materias{
+    width:45vw;
+    height:50vh;
+    text-align:left;
+    float: left;
+    margin-block-start: 10%;
+    margin: 5%;
+    border: black outset 2px ;
+    border-radius:20px;
+    background: #FFFFFF;
+}
+.Division{
+    width:50vw;
+    height:60vh;
+    text-align:left;
+    margin-block-start: 5%;
+    margin-left: 25%;
+    border-radius:20px;
+    background:  #001021;
+}
+    @media screen and (max-width: 815px){
+        *{
+            margin-right: 0%;
+            padding: 0%;
+        }
+        .cuerpo{
+            margin-right: 5% ;
+            background-color: black;
+        }
+    .Derecha{
+        width: 30vw;
+        height: 85vh;
+        margin: 4%;
+    }
+    .Izquierda{
+        width: 30vw;
+        height: 50vh;
+        margin: 3%;
+    }
+    .texto{
+        width: 17vw;
+        float: right;
+        margin: 0%;
+        background-color: #A30000;
+    }
+    li{
+        width: 25vw;
+        text-align: right;
+        font-size: medium;
+        float: right;
+        margin: 2%;
+    }
+    header{
+        width: 29vw;
+        font-size: 110%;
+        text-align: center;
+        background-color: black;
+    }
+    .Titulo{
+        width: 60vw;
+        text-align: center;
+        float: center;
+        background-color: black;
+    }
+    img{
+        width: 7vw;
+        height: 15vh;
+        margin: 0%;
+        margin-block-end: 160%;
+        background-color: blue;
+    }
+    .imagen{
+        background-color: blue;
+    }
+    .Descripcion{
+        margin-block-start: 20%;
+        margin-left: 5%;
+        margin-right: 0%;
+        width: 90vw;
+    }
+    .Division{
+        margin-block-start: 20%;
+        margin-left: 5%;
+        margin-right: 0%;
+        width: 90vw;
+    }
+    a{
+        font-size: small;
+        text-align: justify;
+        margin: 2%;
+    }
+    .solo{
+        font-size: xx-small;
+        margin-block-start: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: black;
+    }
+  }
+  
+  @media all and (max-height: 815px) and (orientation: landscape){
+    
+  }
