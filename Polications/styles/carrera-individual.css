@@ -52,10 +52,12 @@ header{
     text-align:center;
 }
 .sem{
-    float:left;
-    text-align:left;
+    float:center;
+    text-align:center;
     margin-left: 4%;
     color: blue;
+    width: 34vw;
+    height: fit-content;
 }
 .lista{
     width: fit-content;
@@ -107,7 +109,7 @@ img{
     color:black;
 }
 
-    @media screen and (max-width: 815px) and (max-width: 1080px){
+    @media screen and (max-height: 815px){
     .Descripcion{
         width: 90vw;
         height: 100vh;
@@ -142,11 +144,11 @@ img{
         margin: 3%;
     }
     .sem{
-        width: 60vw;
+        width: 67vw;
         height: fit-content;
         margin: 1.5vh 0vh 0vh 4vh;
         text-align: center;
-
+        background-color: #001021;
     }
     .texto{
         width: 40vw;
@@ -166,7 +168,7 @@ img{
     
   }
   
-  @media all and (max-height: 815px) and (max-width: 1080px) and (orientation: landscape){
+  @media screen and (max-height: 815px) and (orientation: landscape){
     .cuerpo{
         background-color: #001021;
     }

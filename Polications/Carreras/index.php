@@ -53,7 +53,7 @@
         </div>
 
         
-        <li>
+        <ul class="list">
 
         <?php
             $index = 0;
@@ -61,7 +61,7 @@
             while ($index < $arr_CO['results']){
             
             
-                    echo '<ul>';
+                    echo '<li>';
             
                     echo '    <div class="tar">
                                 <a href="carrera-individual.php?name=' . $short[$index] . '" class="' . $st[$index] . ' hv">';
@@ -74,7 +74,7 @@
                     echo '        </div>
                                 </a>';
                     echo '    </div>';
-                    echo '</ul>';
+                    echo '</li>';
                     $index++;
             
             }
@@ -85,7 +85,7 @@
 
 
 
-</li>
+        </ul>
 
 
         <?php

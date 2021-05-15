@@ -50,26 +50,22 @@
         </div>
 
 
+        <ul class="lista">
         <?php
         $index = 0;
-                
-
-
-        echo '<button class="accordion first">' . $pregunta[$index] . '</button>';
-        echo '<div class="panel">';
-        echo '  <p class="letra">' . $respuesta[$index] . '</p>';
-        echo '</div>';
-        $index++;
 
         while ($index < $arr_CO['results']){
 
+        echo '<li class="pregunta">';
         echo '<button class="accordion">' . $pregunta[$index] . '</button>';
         echo '<div class="panel">';
         echo '  <p class="letra">' . $respuesta[$index] . '</p>';
         echo '</div>';
+        echo '</li>';
 
         $index++;}
         ?>
+        </ul>
 
 
 

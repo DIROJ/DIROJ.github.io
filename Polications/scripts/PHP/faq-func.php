@@ -4,10 +4,10 @@
     require 'conec.php';
     $acentos = $conexion->query("SET NAMES 'utf8'");
     
-        $sql = "SELECT `pregunta`, `respuesta` FROM `faq`";
+        $sql = "SELECT `ID`,`pregunta`, `respuesta` FROM `faq`";
         $ejecu = mysqli_query($conexion, $sql);
 
-        global $pregunta, $respuesta, $arr_CO, $iterador;
+        global $pregunta, $respuesta, $arr_CO, $iterador, $id;
         $iterador = 0;
 
         $sql_CO = "SELECT COUNT(*) AS `results` FROM `faq`";
@@ -17,8 +17,8 @@
 
         while ($inf=mysqli_fetch_array($ejecu)){
              
-            
-            $pregunta[$iterador] = $inf ["pregunta"];
+            $id[$iterador]        = $inf ["ID"];
+            $pregunta[$iterador]  = $inf ["pregunta"];
             $respuesta[$iterador] = $inf ["respuesta"];
             
             $iterador++;

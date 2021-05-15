@@ -24,6 +24,7 @@ main{
 
 
 /*LETRAS DE INICIO*/
+
 .header{
     width: 95vw;
     float: left;
@@ -142,8 +143,6 @@ main{
 @media screen and (max-height: 815px){
     .card{margin: 15em 1em 0em 2em;}
     .des{margin-bottom: 8vh;}
-    main{width: 100vw;}
+    main{width: 99vw;}
 
 }
-
-

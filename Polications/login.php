@@ -36,11 +36,11 @@
 
             <h2>Iniciar Sesión</h2>
 
-            <input id="Datos" placeholder="Usuario" type="text" name="usuario" required>
+            <input class="Datos" placeholder="Usuario" type="text" name="usuario" required>
 
             <br>
 
-            <input id="Datos" placeholder="Contraseña" type="password" name="password" required>
+            <input class="Datos" placeholder="Contraseña" type="password" name="password" required>
 
             <br>
 

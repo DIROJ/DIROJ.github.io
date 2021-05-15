@@ -5,9 +5,9 @@
     require 'conec.php';
     $acentos = $conexion->query("SET NAMES 'utf8'");
     
-    echo $tituloF = $_POST["tituloF"];
-    echo $titulo = $_POST["titulo"];
-    echo $id     = $_POST["id"];
+    $tituloF = $_POST["tituloF"];
+    $titulo = $_POST["titulo"];
+    $id     = $_POST["id"];
     
     $edit_sql = "UPDATE `lista-foros` SET `Nombre`='$titulo' WHERE ID = '$id'";
     $edit_eje = mysqli_query($conexion, $edit_sql);

@@ -45,7 +45,7 @@ h2 {
   font-family: Arial Black;
 }
 
-#Datos{
+.Datos{
 
   padding: 10px;
   width: 42%;
@@ -84,15 +84,16 @@ input[type="submit"]:active {
 
 }
 
-@media (max-width:768px) {
+@media (max-height:815px) {
+  
   form {
-    width: 100%;
+    width: 87vw;
   }
-}
-
-@media (max-width:480px) {
-  form {
-    width: 100%;
+  .Datos{
+    width: 50vw;
+  }
+  #ingresar{
+    width: 30vw;
   }
 }
 
