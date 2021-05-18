@@ -5,13 +5,13 @@
         require 'conec.php';
         $acentos = $conexion->query("SET NAMES 'utf8'");
     
-        $sqlC = "SELECT * FROM `materia` WHERE Carrera = '$carrera' AND Semestre = '$semestre'";
+        $sqlC = "SELECT * FROM `materia` WHERE Carrera = '$carrera' AND Semestre = '$semestre' AND Tipo = 'Materia'";
         $ejecuC = mysqli_query($conexion, $sqlC);
 
         global $materia, $arr_COC, $iteradorC;
         $iteradorC = 0;
 
-        $sql_COC = "SELECT COUNT(*) AS `resultsC` FROM `materia` WHERE Carrera = '$carrera' AND Semestre = '$semestre'";
+        $sql_COC = "SELECT COUNT(*) AS `resultsC` FROM `materia` WHERE Carrera = '$carrera' AND Semestre = '$semestre' AND Tipo = 'Materia'";
         $eje_COC = mysqli_query($conexion, $sql_COC);
         $arr_COC = mysqli_fetch_array($eje_COC);
 

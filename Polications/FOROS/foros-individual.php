@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/foro-individual.css">
         <link rel="stylesheet" type="text/css" href="../styles/plantilla.css">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-        <link rel="shortcut icon" href="../images/icono_page.png" type="image/png">
+        <link rel="shortcut icon" href="../images/icono.png" type="image/png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
         crossorigin="anonymous">
@@ -34,7 +34,7 @@
             require '../scripts/PHP/conec.php';
             $acentosR = $conexion->query("SET NAMES 'utf8'");
 
-            $sqlR = "SELECT `Logo`, `Short`, `Usuario`, `Color`, `Fecha`, `Color-F`  FROM `lista-foros` WHERE Nombre = '$tituloR' ";
+            $sqlR = "SELECT `Logo`, `Short`, `Usuario`, `Color`, `Fecha`, `Color-F`  FROM `lista-foros`  WHERE Nombre = '$tituloR'";
             $ejecuR = mysqli_query($conexion, $sqlR);
             
             global $fechaR, $usuarioR, $logoR, $colorR, $shortR, $botonR, $colorf;
@@ -78,10 +78,11 @@
             
             
 
-            <p id="aqui">
+            <p id="aqui" >
                 <?php
                     require 'foros-individual-show.php';
                     mostrar($tituloR);
+                    
                 ?>
             </p>
             

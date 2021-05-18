@@ -6,6 +6,7 @@
     <head>                     
     <?php
             $tituloR = $_GET["name"]; 
+            $color = $_GET["class"];
             echo '<title>' . $tituloR . '</title>';
         ?>
         <meta charset="UTF-8">
@@ -13,7 +14,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/carrera-individual.css">
         <link rel="stylesheet" type="text/css" href="../styles/plantilla.css">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-        <link rel="shortcut icon" href="../images/icono_page.png" type="image/png">
+        <link rel="shortcut icon" href="../images/icono.png" type="image/png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
         crossorigin="anonymous">
@@ -69,50 +70,68 @@
                 $ind++;
             }
         ?>
+        
+         <?php
           
 
-        <main>
+            echo '<div class="image-container">';
+            echo '    <div class="text '. $color.'">' .$tituloR. '</div>';
+            echo '</div>';
+        
+            echo '<main>';
 
-            <div class = "Descripcion">
-                <?php
-                    echo '    <header class="Titulo">' . $tituloR . '</header>';
-                    echo '        <p class="presen">' . $presen . '</p>';
+                echo '<section class="topic">';
+                        echo '<p class="presen">' . $presen . '</p>';
+                        echo '<pre class="act">' . $desc . '</pre>';
+                echo '</section>';
 
-                    echo '        <pre class="act">' . $desc . '</pre>';
-
-                    echo '    </div>';
-
-                    echo '    <div class= "Division">';
-                    echo '        <div class = "Izquierda">';
-                    echo '            <header>Semestres</header>';
-                    echo '            <ul class="lista">';
-                    $contador = 0;
-                    while($contador < $no[0]){
-                    echo '                <li class="sem"><a href="">Semestre '.($contador+1). '</a></li>';
-                    $contador++;
-                    }
-                    echo '            </ul>';
-                    echo '        </div>';
-
-                    echo '      <div class = "Derecha">';
-                    echo '          <header>Coordinador</header>';
+                echo '<article class="maestros">';
+                    echo '<h1>Coordinador de la carrera</h1>';
                     $con = 0;
                     while($con < $ind){
-                    echo '              <div class="imagen">
-                                            <img src="' . $link[$con] . '">
-                                        </div>';
-                    echo '              <div class="texto">
-                                            <p>' . $maestro[$con] . '</p>
-                                            <p>Correo Electrónico: ' . $correo[$con] . '</p>
-                                        </div>';
-                                        $con++;
+
+                    echo '<div class="mst">
+                              <img src="' . $link[$con] . '">';
+
+                    echo '<div class="texto">
+                              <p>' . $maestro[$con] . '</p>
+                              <p>Correo Electrónico: ' . $correo[$con] . '</p>
+                          </div>
+                          </div>';
+                          $con++;
                     }
-                    echo '      </div>';
-                   
+                echo '</article>';
+                    
+                    echo '<br>';
+
+                echo '<article class="semestre">';
+                    echo '<h1>Materias por Semestre</h1>';
+                    echo '<ul class="lista">';
+                    require '../scripts/PHP/Semestre-func.php';
+                        $contador = 0;
+                        while($contador < $no[0]){
+                            
+                            carr($tituloR, ($contador+1));
+                            echo '<li class="sem">';
+                                echo '<button type="text" class="accordion">Semestre '.($contador+1). '</button>';
+                            
+                            echo '<div class="panel '. $color.'">';
+                            $contadorm = 0;
+                            while($contadorm < $arr_COC['resultsC']){
+                                echo '<p class="letra">'.$materia[$contadorm].'</p>';
+                                $contadorm++;
+                            }
+                            echo '</div>';
+                            echo'</li>';
+                        $contador++;
+                        }
+                    echo '</ul>';
+                echo '</article>';
 
                 
-                ?>
-        </main>
+    
+        echo '</main>';
+        ?>
         
 
                 
@@ -123,6 +142,7 @@
 
 
         <script src="../scripts/js/plantilla.js"></script>
+        <script src="../scripts/js/semestre.js"></script>
 
         
 

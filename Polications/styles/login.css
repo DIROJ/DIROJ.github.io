@@ -36,6 +36,7 @@ form {
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   text-align: center; 
+  border-radius: 10px;
 }
 
 h2 {
@@ -46,12 +47,13 @@ h2 {
 }
 
 .Datos{
-
+  background-color: #d3deec;
   padding: 10px;
   width: 42%;
   margin: 30px 0;
   font-size: 20px;
-
+  border: none;
+  border-radius: 7px;
 }
 
 #Ingresar{
@@ -63,13 +65,13 @@ h2 {
 }
 
 input[type="submit"] {
-  background: linear-gradient(#408cff, #0072bb);
+  background-color: #1766B5;
   border: 0;
   color: white;
   opacity: 0.85;
   cursor: pointer;
   font-family: Arial;
-  border-radius: 20px;
+  border-radius: 22px;
   margin-bottom: 0;
 }
 

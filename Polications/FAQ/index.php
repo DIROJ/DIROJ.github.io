@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/faq.css">
         <link rel="stylesheet" type="text/css" href="../styles/plantilla.css">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-        <link rel="shortcut icon" href="../images/icono_page.png" type="image/png">
+        <link rel="shortcut icon" href="../images/icono.png" type="image/png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <meta name="description" content="En esta página se muestran las preguntas frecuentes

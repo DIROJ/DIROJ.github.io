@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/foros-lista.css">
         <link rel="stylesheet" type="text/css" href="../styles/plantilla.css">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-        <link rel="shortcut icon" href="../images/icono_page.png" type="image/png">
+        <link rel="shortcut icon" href="../images/icono.png" type="image/png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
         crossorigin="anonymous">
@@ -85,8 +85,7 @@
         
         
         if(isset($_SESSION["usuario"])){
-            require '../scripts/PHP/consulta-user.php';
-                if (verificar_rol($_SESSION["usuario"]) == 'Administrador'){
+                if ($proofuser == 'Administrador'){
                     echo '<button class="add ' . $colorf[0] . ' ' . $color[0] . '" onclick="add_info()">Agregar</button>';
                     echo '<ul class="list">';
                     $index = 0;
@@ -110,7 +109,7 @@
                             $index++;
 
                     }
-                }else if(verificar_rol($_SESSION["usuario"]) == 'Usuario'){
+                }else if($proofuser == 'Usuario'){
                     echo '<ul class="list">';
                     $index = 0;
             

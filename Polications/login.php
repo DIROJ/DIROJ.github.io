@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="styles/login.css">
         <link rel="stylesheet" type="text/css" href="styles/plantilla.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="shortcut icon" href="images/icono_page.png" type="image/png">
+        <link rel="shortcut icon" href="images/icono.png" type="image/png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
         crossorigin="anonymous">
@@ -34,7 +34,7 @@
 
             <img id="LOGO" src="images/logo.png">
 
-            <h2>Iniciar Sesión</h2>
+            <h1>Iniciar Sesión</h1>
 
             <input class="Datos" placeholder="Usuario" type="text" name="usuario" required>
 
@@ -48,7 +48,7 @@
             
             <br>
 
-            <a href="recuperar cuenta.html" style="float:right">Olvidé Mi Contraseña</a>
+            
 
             <a href="registro.html" style="float:left">Registrarme</a>
 

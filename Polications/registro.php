@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/registro.css">
 	<link rel="stylesheet" type="text/css" href="styles/plantilla.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="shortcut icon" href="images/icono_page.png" type="image/png">
+	<link rel="shortcut icon" href="images/icono.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
     crossorigin="anonymous">
@@ -26,19 +26,17 @@
 			require 'scripts/PHP/nav.php';
 			nav();
 		?>
-    <header class="header" id="header">
-		<br>
-		<h1>Polications</h1>
-		<h2>Registro de nuevo Usuario</h2>
-	</header>
+    
 
 		
 	<main>
 		
 
-		
+	
 
 		<form action="scripts/PHP/registro-func.php" method="POST" class="formulario" id="formulario">
+		<div class="titulo"><h1><br><br>Registro</h1></div>
+		<div class="imagen"><img class="logo" src="images/logo.png"></div>
 			<!-- Grupo: Usuario -->
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Usuario</label>

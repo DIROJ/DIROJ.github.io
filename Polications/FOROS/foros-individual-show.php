@@ -7,8 +7,8 @@
             $acentos = $conexion->query("SET NAMES 'utf8'");
 
 
-        if(mysqli_query($conexion,"DESCRIBE `$Busca`")) {
-            $sql = "SELECT `Usuario`, `Texto`, `Tiempo`, `Tipo`, `Tema` FROM `$Busca`";
+        if($conexion) {
+            $sql = "SELECT `Usuario`, `Texto`, `Tiempo`, `Tipo`, `Tema` FROM `$Busca`  ORDER BY `Tiempo` ASC";
             $ejecu = mysqli_query($conexion, $sql);
             global $Usuario, $Texto, $Tiempo, $Tipo, $Tema, $arr_com, $iterador;
             $iterador = 0;

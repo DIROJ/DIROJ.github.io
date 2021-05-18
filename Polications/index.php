@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="styles/index.css">
         <link rel="stylesheet" type="text/css" href="styles/plantilla.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="shortcut icon" href="images/icono_page.png" type="image/png">
+        <link rel="shortcut icon" href="images/icono.png" type="image/png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
         crossorigin="anonymous">
