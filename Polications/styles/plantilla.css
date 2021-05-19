@@ -107,15 +107,18 @@ html{
 }
 
  /*Pantallas más pequeñas*/
-@media screen and (max-height: 815px) {
-    .sidenav {padding-top: 15px;}
+@media screen and (max-height: 815px) and (min-width: 1300px){
+    .sidenav {padding-top: 65px;}
     .sidenav a {font-size: 18px;}
-    .cuerpo{
-        width: 99.3vw;
-    }
-    .page-footer{
-        width: 99vw;
-}
+    .cuerpo{width: 99.3vw;}
+    .page-footer{width: 99.3vw;}
 }
 
-/*PIE DE PÁGINA*/
+/*Celular*/
+@media screen and (max-width:400px) {
+    .sidenav {padding-top: 65px;}
+}
+/*Celular Horizontal*/
+@media screen and (max-height:400px) and (orientation:landscape){
+    .sidenav {padding-top: 65px;}
+}

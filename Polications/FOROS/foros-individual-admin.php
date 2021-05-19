@@ -78,7 +78,7 @@
                 echo '</div>';
                 echo '<p class="usuario">' . $usuarioR . '</p>';
                 echo '<p class="tiempo">' . $fechaR . '</p>';
-                echo '<button type="submit" class="liga" title="Guardar"><i class="fas fa-save ico-e"></i></button>';
+                echo '<button type="submit" class="liga guardar" title="Guardar"><i class="fas fa-save ico-e"></i></button>';
                 echo '</form>';
                 echo '<a class="liga" onclick="del()" title="Eliminar Foro"><i class="fas fa-trash-alt ico-t"></i></a>';
 

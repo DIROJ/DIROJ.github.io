@@ -173,8 +173,8 @@
     text-align: justify;
 }
 .letra{
-    margin-top: 2vh;
-    width: 68vw;
+    margin: 2vh 2vh 2vh 2vh;
+    width: 75vw;
     float: left;
 }
 .btn-e, .btn-t{
@@ -233,9 +233,34 @@
   }
 
 
-@media screen and (max-height: 815px){
+
+
+
+@media screen and (max-height: 815px) and (min-width: 1300px){
+
+    .text{width: 50%;}
+    .agregar{width: 8vw; height: 6vh;}
+    .ico-e, .ico-t{font-size: 1.8vw;}
+    
+}
+
+/*Celular*/
+@media screen and (max-width:400px) {
     .image-container{margin-top: 4em;}
     .text{font-size: 9vw;
-          width: 65%;}
+          width: 80%;}
     .first{margin-top: 4em;}
+    .letra{width: 67vw;}
+    .agregar{width: 20vw; height: 5vh; font-size: 1em;}
+    .btn-e, .btn-t{ margin-right: 4vw;}
+    .ico-e, .ico-t{font-size: 4vh; }
+    .res-t{width: 75vw; margin-left: 2vw;}
+}
+/*Celular Horizontal*/
+@media screen and (max-height:400px) and (orientation:landscape){
+    .image-container{margin-top: 3em;}
+    .agregar{width: 15vw; height:12vh; font-size: 1em;}
+    .ico-e, .ico-t{font-size: 4vw; }
+    .btn-e, .btn-t{ margin-right: 4vw;}
+    .res-t{width: 75vw; margin-left: 1.5vw;}
 }

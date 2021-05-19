@@ -69,7 +69,8 @@ li{
   word-wrap: break-word;
   color: #A30000;
   font-size: 3.4vh;
-  
+  border-radius: 10px;
+  border: .5px rgb(172, 172, 172) solid;
 }
 .titulo:focus{
     outline-color: #1766B5;
@@ -317,39 +318,76 @@ padding-left: 2vw;
 
 
 
-@media screen and (max-height: 815px){
+/*Pantalla pequeña*/
+@media screen and (max-height: 815px) and (min-width: 1300px){
+
+  .principal{width: 75vw; margin-top: 30vh; }
+  .topic{width: 75vw; height:50vh; }
+  .titulo{font-size: 2.5vw; width: 65vw; }
+  .tema{ width: 8vw; text-align: center; }
+  .tema h6{font-size: 1.2vw;}
+  .tema i{font-size: 2.5vw;}
+  .input-comment{width: 85vw;}
+  .usuario, .tiempo{font-size: 1.3vw; padding: 0vh 2vh 0vh 2vh; margin: 0.5;}
+  .comment-add{ width: 75vw; height: fit-content; margin-bottom: 1vh;}
+  .input-comment{width: 75vw; font-size: medium;}
+  .comentar{margin: 3vh 0vw 0vh 0vw; font-size: 1.2vw;}
+  .comments{width: 75vw; margin-top: 6vh; }
+  .comment-time{width: fit-content;}
+  .comment{width: 75vw;  font-size:medium; margin-bottom: 0;}
+  .reply{float: left; padding-top: 0; font-size: medium;}
+  .tiempo{font-size: 1.2vw; width: 100%;}
+  .usuario{font-size: 1.2vw;}
+  .ico-e, .ico-t{font-size: 2vw;}
+  .liga{margin-left: 1vw;}
+
+}
+
+/*Celular*/
+@media screen and (max-width:400px){
+
   .principal{width: 90vw;}
   .topic{width: 90vw; }
-  .titulo{font-size: 2.5vh; width: 72vw; }
-  .tema{ width: 17vw; text-align: center; }
+  .titulo{font-size: 2.5vh; width: 69vw; }
+  .tema{ width: 15vw; text-align: center;}
   .tema h6{font-size: 1.2vh;}
   .tema i{font-size: 2.5vh;}
   .input-comment{width: 80vw;}
   .usuario, .tiempo{font-size: 1.3vh; padding: 0vh 2vh 0vh 2vh; margin: 0.5;}
-  .comment-add{ width: 90vw; height: fit-content;}
+  .tiempo{width: 100%;}
+  .comment-add{ width: 90vw; height: fit-content; margin-bottom: 1vh;}
   .input-comment{width: 90vw; font-size: small;}
   .comentar{margin: 1vh 0vw 0vh 0vw; font-size: smaller;}
   .comments{width: 90vw; margin-top: 1vh;}
   .comment-time{width: fit-content;}
   .comment{width: 90vw;  font-size:small; margin-bottom: 0;}
   .reply{float: left; padding-top: 0; }
+
+
+
+  
+
 }
 
-@media all and (max-height: 815px) and (orientation: landscape){
+@media screen and (max-height:400px) and (orientation:landscape){
+
   .principal{width: 85vw; margin-top: 30vh; }
-  .topic{width: 85vw; }
+  .topic{width: 85vw; height: 50vh;}
   .titulo{font-size: 2.5vw; width: 67vw; }
   .tema{ width: 17vw; text-align: center; }
   .tema h6{font-size: 1.2vw;}
   .tema i{font-size: 2.5vw;}
   .input-comment{width: 85vw;}
   .usuario, .tiempo{font-size: 1.3vw; padding: 0vh 2vh 0vh 2vh; margin: 0.5;}
-  .comment-add{ width: 85vw; height: fit-content;}
+  .tiempo{width: 100%;}
+  .comment-add{ width: 85vw; height: fit-content; margin-bottom: 1vh;}
   .input-comment{width: 85vw; font-size: medium;}
   .comentar{margin: 3vh 0vw 0vh 0vw; font-size: 1.8vw;}
   .comments{width: 85vw; margin-top: 6vh; }
   .comment-time{width: fit-content;}
   .comment{width: 85vw;  font-size:medium; margin-bottom: 0;}
   .reply{float: left; padding-top: 0; font-size: medium;}
+  .ico-e, .ico-t{font-size: 3vw;}
+
 }
 

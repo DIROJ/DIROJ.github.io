@@ -294,11 +294,38 @@ padding-left: 2vw;
 
 
 
-@media screen and (max-height: 815px){
+
+
+/*Pantalla pequeña*/
+@media screen and (max-height: 815px) and (min-width: 1300px){
+
+  .principal{width: 75vw; margin-top: 30vh; }
+  .topic{width: 75vw; height:50vh; }
+  .titulo{font-size: 2.5vw; width: 65vw; }
+  .tema{ width: 8vw; text-align: center; }
+  .tema h6{font-size: 1.2vw;}
+  .tema i{font-size: 2.5vw;}
+  .input-comment{width: 85vw;}
+  .usuario, .tiempo{font-size: 1.3vw; padding: 0vh 2vh 0vh 2vh; margin: 0.5;}
+  .comment-add{ width: 75vw; height: fit-content;}
+  .input-comment{width: 75vw; font-size: medium;}
+  .comentar{margin: 3vh 0vw 0vh 0vw; font-size: 1.2vw;}
+  .comments{width: 75vw; margin-top: 6vh; }
+  .comment-time{width: fit-content;}
+  .comment{width: 75vw;  font-size:medium; margin-bottom: 0;}
+  .reply{float: left; padding-top: 0; font-size: medium;}
+  .tiempo{font-size: 1.2vw;}
+  .usuario{font-size: 1.2vw;}
+
+}
+
+/*Celular*/
+@media screen and (max-width:400px){
+
   .principal{width: 90vw;}
   .topic{width: 90vw; }
-  .titulo{font-size: 2.5vh; width: 72vw; }
-  .tema{ width: 17vw; text-align: center; }
+  .titulo{font-size: 2.5vh; width: 69vw; }
+  .tema{ width: 15vw; text-align: center;}
   .tema h6{font-size: 1.2vh;}
   .tema i{font-size: 2.5vh;}
   .input-comment{width: 80vw;}
@@ -310,9 +337,15 @@ padding-left: 2vw;
   .comment-time{width: fit-content;}
   .comment{width: 90vw;  font-size:small; margin-bottom: 0;}
   .reply{float: left; padding-top: 0; }
+
+
+
+  
+
 }
 
-@media all and (max-height: 815px) and (orientation: landscape){
+@media screen and (max-height:400px) and (orientation:landscape){
+
   .principal{width: 85vw; margin-top: 30vh; }
   .topic{width: 85vw; }
   .titulo{font-size: 2.5vw; width: 67vw; }
@@ -328,5 +361,10 @@ padding-left: 2vw;
   .comment-time{width: fit-content;}
   .comment{width: 85vw;  font-size:medium; margin-bottom: 0;}
   .reply{float: left; padding-top: 0; font-size: medium;}
+
 }
+
+
+
+
 

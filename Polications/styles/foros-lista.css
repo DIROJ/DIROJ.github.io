@@ -30,12 +30,6 @@
     box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (max-height: 815px){
-    .image-container{margin-top: 4em;}
-    .text{font-size: 9vw;
-          width: 70%;}
-}
-
 
 .add{
   margin: 5vh 15vw 0vh 0vw;
@@ -61,6 +55,8 @@
 
 .list{
   margin-top: 20vh;
+  float: right;
+  width: 100vw;
   }
 
 li{
@@ -233,39 +229,63 @@ li{
 
 
 
-@media screen and (max-height: 815px){
+/*Pantalla pequeña*/
+@media screen and (max-height: 815px) and (min-width: 1300px){
+  .text{width: 55%;}
+    .ico-sm{font-size: 14vh;}
+    .ico-big{font-size: 15vh;}
+    .tarjeta-cuerpo h2{font-size: 1.5em;}
+    .tarjeta-cuerpo h3{font-size: 1.2em;}
+  
+}
+
+
+/*Celular*/
+@media screen and (max-width:400px){
+  .image-container{margin-top: 4em;}
+  .text{font-size: 12vw; width: 80%;}
   .tar{width: 83vw; height: 15vh;}
   .ico-big, .ico-sm{
     font-size: 8vh;
     margin-top: 3vh;
   }
   .tarjeta-cuerpo{
-    height: 10vh;
-    width: 55vw;
-    margin-left: 15vw;
-  }
-  .tarjeta-cuerpo h2{
-    font-size: 2vh;
-  }
-  .tarjeta-cuerpo h4{
-    font-size: 2vh;
-  }
-}
-
-@media all and (max-height: 815px) and (orientation: landscape){
-  .tar{width: 80vw; height: 40vh; }
-  .ico-big, .ico-sm{
-    font-size: 16vh;
-    margin: 10vh 5vw 10vh 5vw;
-  }
-  .tarjeta-cuerpo{
-    height: 25vh;
-    width: 55vw;
-    margin-left: 10vw;
-    margin-top: 5vh;
-    
+    height: 15vh;
+    width: 58vw;
+    margin-left: 12vw;
   }
   .tarjeta-cuerpo h2, .tarjeta-cuerpo h4{
-    font-size: 6vh;
+      font-size: 1.8vh;
   }
+  ul li{margin-bottom: 4vh;}
+  .list{margin-top: 5vh; }
+  .ico-cont{ height: fit-content; width: fit-content;}
+
+  .add{height: 5vh; width: 20vw; margin: 0vh 5vh 5vh 0vh; float: right;}
+  
+
+
+}
+
+
+/*Celular Horizontal*/
+  @media screen and (max-height:400px) and (orientation:landscape){
+  .image-container{margin-top: 3em;}
+
+    .tar{width: 80vw; height: 50vh; }
+    .ico-big, .ico-sm{
+      font-size: 20vh;
+      margin: 10vh 5vw 10vh 5vw;
+    }
+    .tarjeta-cuerpo{
+      height: 25vh;
+      width: 55vw;
+      margin-left: 10vw;
+      margin-top: 5vh;
+      
+    }
+    .tarjeta-cuerpo h3, .tarjeta-cuerpo h2{
+      font-size: 6vh;
+    }
+    .add{height: 10vh; width: 10vw; margin: 0vh 5vh 5vh 0vh; float: right; font-size: 1.7vw;}
 }

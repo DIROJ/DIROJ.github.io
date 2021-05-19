@@ -86,7 +86,7 @@
                 echo '</section>';
 
                 echo '<article class="maestros">';
-                    echo '<h1>Coordinador de la carrera</h1>';
+                    echo '<h1 class="title" >Coordinador de la carrera</h1>';
                     $con = 0;
                     while($con < $ind){
 
@@ -105,7 +105,7 @@
                     echo '<br>';
 
                 echo '<article class="semestre">';
-                    echo '<h1>Materias por Semestre</h1>';
+                    echo '<h1 class="title" >Materias por Semestre</h1>';
                     echo '<ul class="lista">';
                     require '../scripts/PHP/Semestre-func.php';
                         $contador = 0;
