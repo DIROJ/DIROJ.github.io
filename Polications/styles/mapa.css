@@ -1,6 +1,107 @@
-.mapa{
-    margin-top: 15vh;
-    width: 80vw;
-    height: 80vh;
+
+* {box-sizing: border-box;}
+
+
+  
+.info{
+    width: 18vw;
+    height: fit-content;
+    margin:  15vh 0vw 0vh 0vw;
     float: left;
+    border-radius: 20px;
+    padding: 1vw 0vw 1vw 0vw;
+    background-color: #fff;
+    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  .info h3{
+    width: fit-content;
+    display: block;
+    margin: auto;
+    color: #1766B5;
+  }
+.info_db{
+    background-color: #fff;
+    width: 16vw;
+    height: 63vh;
+    margin: auto;
+    display: block;
+    float: center;
+}
+.info_lugar{
+  background-color: #fff;
+  text-align: center;
+  font-size: 1em;
+  padding: 2vh 0vw 2vh 0vw;
+  font-weight: 500;
+}
+.mapa-cont{
+  margin:15vh 5vw 0vh 5vw;
+  cursor: grab;
+  overflow: auto;
+  width: 60vw;
+  height: 70vh;
+  float: left;
+  border: #c7c7c7 solid 1px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.area{
+  border: none;
+}
+.area :focus{
+  outline: none;
+  border-color: none;
+}
+
+.mapa-cont::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.mapa-cont::-webkit-scrollbar:vertical {
+  width:0px;
+}
+
+.mapa-cont::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.mapa-cont::-webkit-scrollbar:horizontal {
+  height: 0px;
+}
+
+.mapa-cont::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 4px solid transparent;
+}
+
+.mapa-cont::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
+
+/*Pantalla pequeña*/
+@media screen and (max-height: 815px) and (min-width: 1300px){
+    
+  .info{height: 80vh;}
+  .info h3{font-size: 1.3em;}
+  .mapa-cont{margin-left: 2vw; width: 63vw; height: 80vh;}
+
+}
+
+/*Celular*/
+@media screen and (max-width:400px){
+  .mapa-cont{width: 90vw;}
+  .info{width: 90vw; height: fit-content;  margin-left: 5vw; padding: 2vh;}
+  .info_db{ width: 72vw;  }
+
+}
+
+/*Celular Horizontal*/
+@media screen and (max-height:400px) and (orientation:landscape){
+
+  .mapa-cont{margin-top: 8vw; width: 90vw; height: 90vh;}
+  .info{width: 40vw; height: 130vh; margin-left: 5vw;}
+  .info_db{width: 35vw;}
 }

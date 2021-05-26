@@ -22,7 +22,7 @@ if($filas){
     $_SESSION["usuario"] = $usuario;
 }else{
     
-  echo 'ERROR';
+  header("location:../../login.php");
 }
 mysqli_free_result($resultado);
 mysqli_close($conexion);

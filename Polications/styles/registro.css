@@ -25,7 +25,10 @@ main {
 	height: 20vh;
 	float: left;
 	text-align: center;
-
+	
+}
+.titulo h1{
+	padding: 2vw;
 }
 .logo{
 	width: 40%;
@@ -51,7 +54,7 @@ h2{
 	padding: 0vh 2.5vw 2vh 2.5vw;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-	height: 80vh;
+	height: fit-content;
 }
 
 .formulario__label {
@@ -183,10 +186,18 @@ h2{
 
 
 /* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-height: 815px) and (min-width: 1300px){
+
+	.logo{margin-top: 6%;}
+
+}
+
 @media screen and (max-width: 800px) {
 	.formulario {
 		grid-template-columns: 1fr;
+		width: 90vw;
 	}
+	main{padding: 0;}
 
 	.formulario__grupo-terminos, 
 	.formulario__mensaje,
@@ -198,8 +209,10 @@ h2{
 		width: 100%;
 	}
 	header{height: 23vh; width: 100vw;}
+	.titulo {height: 20vw;}
 }
 
-@media all and (max-height: 800px) and (orientation: landscape){
+@media all and (max-width: 400px) and (orientation: landscape){
     header{margin:20vh 0vh 10vh 0vh; height: 40vh; width: 100vw;}
+	.logo{ margin-top: 0;}
 }

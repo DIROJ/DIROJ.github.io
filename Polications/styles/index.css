@@ -103,7 +103,7 @@ main{
     text-align: justify;
     margin: 0 37px 20px 37px;
     width: 240px;
-    font-size: .85vw;
+    font-size: 1em;
 }
 .foro-i{
     font-size:265px;
@@ -145,12 +145,12 @@ main{
     
     .card  {
         box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.1);
-        width: 18vw;
-        height: fit-content;
+        width: 22vw;
+        height: 80vh;
         text-align: center;
         float: left; 
         background-color: #001021;
-        margin: 3vw;
+        margin: 3vw 1vw 3vw 1vw;
     }
     .cards{
         width: fit-content;
@@ -170,13 +170,14 @@ main{
         text-align: justify;
         padding: 0vw 1.3vw 0vw 1.3vw;
         margin: 0;
-        width: 18vw;
-        height: 20vh;
+        width: 22vw;
+        height: 30vh;
+        font-size: 0.95em;
     }
-    .foro-i{font-size: 210px;}
-    .pregunta-i{font-size: 198px;}
-    .carrera-i{font-size: 195px;}
-    .map-i{font-size: 200px;}
+    .foro-i{font-size: 190px;  height: 30vh;  margin-top: 2vh;}
+    .pregunta-i{font-size: 178px; height: 30vh;}
+    .carrera-i{font-size: 150px; height: 30vh;}
+    .map-i{font-size: 180px; height: 30vh;}
 }
 
 

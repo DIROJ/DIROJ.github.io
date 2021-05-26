@@ -50,7 +50,7 @@
 
             
 
-            <a href="registro.html" style="float:left">Registrarme</a>
+            <a href="registro.php" style="float:left">Registrarme</a>
 
         </form>
     </main>

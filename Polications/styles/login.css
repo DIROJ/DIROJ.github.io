@@ -86,13 +86,19 @@ input[type="submit"]:active {
 
 }
 
-@media (max-height:815px) {
-  
+ /*Pantallas más pequeñas*/
+ @media screen and (max-height: 815px) and (min-width: 1300px){
+   form{ width: 57vw;}
+
+ }
+/*Celular*/
+@media screen and (max-width:400px) {
+
   form {
     width: 87vw;
   }
   .Datos{
-    width: 50vw;
+    width: 63vw;
   }
   #ingresar{
     width: 30vw;
@@ -101,4 +107,9 @@ input[type="submit"]:active {
 
 p{
   font-size: 20px;
+
+
 }
+  /*Celular Horizontal*/
+@media screen and (max-height:400px) and (orientation:landscape){}
+

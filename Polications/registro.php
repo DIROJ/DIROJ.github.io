@@ -35,8 +35,8 @@
 	
 
 		<form action="scripts/PHP/registro-func.php" method="POST" class="formulario" id="formulario">
-		<div class="titulo"><h1><br><br>Registro</h1></div>
-		<div class="imagen"><img class="logo" src="images/logo.png"></div>
+		<div class="titulo formulario__grupo"><h1>Registro</h1></div>
+		<div class="imagen formulario__grupo"><img class="logo" src="images/logo.png"></div>
 			<!-- Grupo: Usuario -->
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Usuario</label>
