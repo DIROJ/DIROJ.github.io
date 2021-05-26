@@ -56,10 +56,10 @@
                 $desc   = $infor ["descripcion"];
 
 
-            $sqlM = "SELECT `numerosemestre`, `maestro`, `correo`, `links` FROM `info-maestros` WHERE namecarrera = '$tituloR'";
+            $sqlM = "SELECT `numerosemestre`, `maestro`, `correo`, `links`, `rol` FROM `info-maestros` WHERE namecarrera = '$tituloR'";
             $ejecuM = mysqli_query($conexion, $sqlM);
             
-            global $no, $maestro, $correo, $link, $ind;
+            global $no, $maestro, $correo, $link, $ind, $rol;
             $ind = 0;
             while ($inforM=mysqli_fetch_array($ejecuM)){
             
@@ -67,6 +67,7 @@
                 $maestro[$ind] = $inforM ["maestro"];
                 $correo [$ind] = $inforM ["correo"];
                 $link   [$ind] = $inforM ["links"];
+                $rol    [$ind] = $inforM ["rol"];
                 $ind++;
             }
         ?>
@@ -86,7 +87,7 @@
                 echo '</section>';
 
                 echo '<article class="maestros">';
-                    echo '<h1 class="title" >Coordinador de la carrera</h1>';
+                    echo '<h1 class="title" >Encargados</h1>';
                     $con = 0;
                     while($con < $ind){
 
@@ -96,6 +97,7 @@
                     echo '<div class="texto">
                               <p>' . $maestro[$con] . '</p>
                               <p>Correo Electrónico: ' . $correo[$con] . '</p>
+                              <p>' . $rol[$con] . '</p>
                           </div>
                           </div>';
                           $con++;

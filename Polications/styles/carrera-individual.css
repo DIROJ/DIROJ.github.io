@@ -211,7 +211,7 @@
     width: 70vw;
     height: fit-content;
     float: left;
-    margin: 0vh 4vw 5vh 0vw;
+    margin: 0vh 0vw 5vh 0vw;
     padding: 0vh 0vw 4vh 0vw;
     border-radius: 9px;
     background-color: #fff;
@@ -258,7 +258,8 @@
 
   @media screen and (max-height: 815px) and (min-width: 1300px){
     .text{width: 55%; font-size: 9vw;}
-    
+    .topic{height: 60vh;}
+
     
     
   }
