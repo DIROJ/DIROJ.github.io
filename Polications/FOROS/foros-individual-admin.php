@@ -96,9 +96,9 @@
             
             
                 if(mysqli_query($conexion,"DESCRIBE `$Busca`")) {
-                    $sql = "SELECT `Usuario`, `Texto`, `Tiempo`, `Tipo`, `Tema` FROM `$Busca`";
+                    $sql = "SELECT `ID`, `Usuario`, `Texto`, `Tiempo`, `Tipo`, `Tema` FROM `$Busca`";
                     $ejecu = mysqli_query($conexion, $sql);
-                    global $Usuario, $Texto, $Tiempo, $Tipo, $Tema, $arr_com, $iterador, $indexcom;
+                    global $Usuario, $Texto, $Tiempo, $Tipo, $Tema, $arr_com, $iterador, $indexcom, $id_com;
                     $iterador = 0;
                     $sql_com = "SELECT COUNT(*) AS `resultscom` FROM `$Busca`";
                     $eje_com = mysqli_query($conexion, $sql_com);
@@ -109,47 +109,25 @@
                         $Tiempo [$iterador] = $inf["Tiempo"]; 
                         $Tipo   [$iterador] = $inf["Tipo"];
                         $Tema   [$iterador] = $inf["Tema"];
+                        $id_com [$iterador] = $inf["ID"];
                         $iterador++;
                     }
                     
                     
                     $indexcom = 0;
                     while ($indexcom < $arr_com['resultscom']){
-                        echo '<article class="comments">';
+                        echo '<form class="comments" action="../scripts/PHP/foros-com-del.php" method="POST" name="new-foro">';
+                        echo '<input type="hidden" name="titulo" id="el-ti" value="'. $Texto[$indexcom].'" >';
+                        echo '<input type="hidden" name="user"   id="el-us" value="'. $Usuario[$indexcom].'" >';
+                        echo '<input type="hidden" name="tema"   id="el-te" value="'. $Busca.'" >';
+                        echo '<input type="hidden" name="ide"     id="el-ide" value="'. $id_com[$indexcom].'" >';
                         echo '<p class="comment-user">' . $Usuario[$indexcom] . '</p>';
-                        echo "<button class='btn-cerrar' onclick='remove()' title='Eliminar Comentario'><i class='fas fa-times cerrar'></i></button>";
+                        echo "<button type='submit' class='btn-cerrar' onclick='remove()' title='Eliminar Comentario'><i class='fas fa-times cerrar'></i></button>";
                         echo '<p class="comment-time">' . $Tiempo[$indexcom] . '</p>';
                         echo '<pre class="comment ">' . $Texto[$indexcom] . '</pre>';
-                        echo '<i class="fas fa-reply reply"></i>';
-                        echo '</article>';
+                        
+                        echo '</form>';
 
-                        echo '    <div id="modal-remove" class="modal fade">';
-                        echo '    <div class="modal-dialog modal-lg modal-dialog-centered">';
-                        echo '        <div class="modal-content">';
-                        echo '            <div class="modal-header">';
-                        echo '                <button type="button" class="close" data-dismiss="modal" aria-label="close">';
-                        echo '                    <span>x</span>';
-                        echo '                </button>';
-                        echo '            </div>';
-                        echo '            <div class="modal-body text-center">';
-                        echo '            ';
-                        echo '                <h4>¿Estas seguro de que quieres cambiar el nombre?</h4>';
-                        echo '            <div class="input-group">';
-                        echo '                <form action="../scripts/PHP/foros-com-del.php" method="POST" name="new-foro" class="input-group-append" >';
-                        echo '                ';
-                        echo '                    <input type="hidden" name="titulo" id="el-ti" value="'. $Texto[$indexcom].'" >';
-                        echo '                    <input type="hidden" name="user"   id="el-us" value="'. $Usuario[$indexcom].'" >';
-                        echo '                    <input type="hidden" name="tema"   id="el-te" value="'. $Busca.'" >';
-                        echo '                    <input type="submit" class="btn-acept" value="Confirmar">';
-                        echo '                    <button type="button" class="btn-cancel" data-dismiss="modal" aria-label="close">';
-                        echo '                        <span>Cancelar</span>';
-                        echo '                    </button>';
-                        echo '                </form>';
-                        echo '            </div>';
-                        echo '            </div>';
-                        echo '        </div>';
-                        echo '    </div>';
-                        echo '</div>';
                         $indexcom++;
                     }           
                 }else{

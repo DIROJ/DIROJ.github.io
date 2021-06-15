@@ -34,7 +34,7 @@ $acentos = $conexion->query("SET NAMES 'utf8'");
     }
     if ($probar == 0){
         $crear_sql = "CREATE TABLE `$nombre` ( `ID` INT(12) NOT NULL AUTO_INCREMENT , `Usuario` VARCHAR(20) NOT NULL , `Texto`
-        VARCHAR(64) NOT NULL , `Tiempo` DATETIME NOT NULL , `Tipo` VARCHAR(20) NOT NULL , `Tema` VARCHAR(20) NOT NULL , PRIMARY KEY (`ID`))";
+        VARCHAR(255) NOT NULL , `Tiempo` DATETIME NOT NULL , `Tipo` VARCHAR(20) NOT NULL , `Tema` VARCHAR(20) NOT NULL , PRIMARY KEY (`ID`))";
         $crear_eje = mysqli_query($conexion, $crear_sql);
 
         $insertar_sql = "INSERT INTO `lista-foros` (`Nombre`,`Tipo`,`Logo`,`Short`,`Color`,`Usuario`,`Fecha`,`Color-F`)

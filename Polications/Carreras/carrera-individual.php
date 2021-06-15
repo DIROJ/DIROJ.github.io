@@ -55,7 +55,7 @@
                 $presen = $infor ["presentacion"];
                 $desc   = $infor ["descripcion"];
 
-
+            
             $sqlM = "SELECT `numerosemestre`, `maestro`, `correo`, `links`, `rol` FROM `info-maestros` WHERE namecarrera = '$tituloR'";
             $ejecuM = mysqli_query($conexion, $sqlM);
             

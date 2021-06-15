@@ -8,7 +8,7 @@
 
 
         if($conexion) {
-            $sql = "SELECT `Usuario`, `Texto`, `Tiempo`, `Tipo`, `Tema` FROM `$Busca`  ORDER BY `Tiempo` ASC";
+            $sql = "SELECT `Usuario`, `Texto`, `Tiempo`, `Tipo`, `Tema` FROM `$Busca`  ORDER BY `Tiempo` DESC";
             $ejecu = mysqli_query($conexion, $sql);
             global $Usuario, $Texto, $Tiempo, $Tipo, $Tema, $arr_com, $iterador;
             $iterador = 0;

@@ -81,7 +81,7 @@
 			<div class="formulario__grupo" id="grupo__password">
 				<label for="password" class="formulario__label">Contraseña</label>
 				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" required name="password" id="password">
+					<input type="password" class="formulario__input" required name="password" id="password" minlength="8">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
@@ -91,7 +91,7 @@
 			<div class="formulario__grupo" id="grupo__password2">
 				<label for="password2" class="formulario__label">Repetir Contraseña</label>
 				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" required name="password2" id="password2">
+					<input type="password" class="formulario__input" required name="password2" id="password2" minlength="8">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>

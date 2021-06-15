@@ -56,8 +56,9 @@
             $sentencia = "SELECT * FROM `lista-foros` WHERE Short = '$tema'";
             $consulta = mysqli_query($conexion, $sentencia);
     
-            global $nombre, $tipo, $logo, $short, $color, $fecha, $usuario, $colorf;
+            global $nombre, $tipo, $logo, $short, $color, $fecha, $usuario, $colorf, $confirmacion;
             $iterador = 0;
+            $confirmacion = 0;
     
             $sql = "SELECT COUNT(*) AS `results` FROM `lista-foros` WHERE Short = '$tema'";
             $eje = mysqli_query($conexion, $sql);
@@ -75,6 +76,43 @@
                 $usuario[$iterador] = $inf ["Usuario"];   
                 $colorf [$iterador] = $inf ["Color-F"]; 
                 $iterador++;
+                $confirmacion = 1;
+            }
+
+            if($confirmacion == 0){
+
+                if($tema == "BECAS"){
+                    $logo[0]   = "fas fa-file-invoice-dollar ico-sm";
+                    $color[0]  = "bec";
+                    $colorf[0] = "bec-f";
+                }else if($tema == "PRÁCTICAS"){
+                    $logo[0]   = "fas fa-user-tie ico-sm";
+                    $color[0]  = "prac";
+                    $colorf[0] = "prac-f";
+                }else if($tema == "SERVICIO"){
+                    $logo[0]   = "fas fa-clipboard-list ico-sm";
+                    $color[0]  = "serv";
+                    $colorf[0] = "serv-f";
+                }else{
+                $sentencia_null = "SELECT `Logo`, `Color` FROM `carreras` WHERE Short = '$tema'";
+                $consulta_null = mysqli_query($conexion, $sentencia_null);
+                $arr_null = mysqli_fetch_array($consulta_null);
+
+
+                $logo[0] = $arr_null[0];
+                $color[0] = $arr_null[1];
+                $colorf[0] = $arr_null[1] . "-f";
+                }
+
+                $short[0] = $tema;
+
+                if($tema == "BECAS" || $tema == "PRÁCTICAS" || $tema == "SERVICIO"){
+                    $tipo [0] = "Otro";
+                }else if($tema == "BTDC" || $tema == "BTQM"){
+                    $tipo[0] = "Bachillerato";
+                }else{
+                    $tipo[0] = "Carrera";
+                }
             }
         ?>
 

@@ -22,7 +22,7 @@
 .info_db{
     background-color: #fff;
     width: 16vw;
-    height: 63vh;
+    height: 64vh;
     margin: auto;
     display: block;
     float: center;
@@ -84,9 +84,10 @@
 /*Pantalla pequeña*/
 @media screen and (max-height: 815px) and (min-width: 1300px){
     
-  .info{height: 80vh;}
-  .info h3{font-size: 1.3em;}
-  .mapa-cont{margin-left: 2vw; width: 63vw; height: 80vh;}
+  .info{height: 100vh; width: 24vw; }
+  .info h3{font-size: 1.3em; margin-left: 6.5vw;}
+  .info_db{padding-top: 2vh; width: 20vw; height: fit-content;}
+  .mapa-cont{margin-right: 5vh; margin-left: 0vh; width: 63vw; height: 100vh;}
 
 }
 

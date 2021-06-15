@@ -60,15 +60,18 @@
         while ($index < $arr_CO['results']){
 
         echo '<li class="pregunta">';
-        echo '<form method="POST" action="../scripts/PHP/faq-edit.php" name="editar">';
-            echo '<button type="button" class="accordion"><input type="text" class="pp" name="pregunta" value="' . $pregunta[$index] . '"></button>';
-            echo '<div class="panel">';
-            echo '  <textarea name="respuesta" class="res-t" col="3">' .$respuesta[$index]. '</textarea>';
-            echo '<input type="hidden" name="id" value="'.$id[$index].'">';
-            echo ' <button type="submit" class="btn-e" title="Guardar Cambios" ><i class="fas fa-save ico-e"></i></button>';
-        echo '</form>';
-        echo ' <button type="button" class="btn-t" title="Eliminar" onclick="del()"><i class="fas fa-trash-alt ico-t"></i></button>';
-        echo '</div>';
+            echo '<form method="POST" action="../scripts/PHP/faq-edit.php" name="editar">';
+                echo '<button type="button" class="accordion"><input type="text" class="pp" name="pregunta" value="' . $pregunta[$index] . '"></button>';
+                echo '<div class="panel">';
+                echo '  <textarea name="respuesta" class="res-t" col="3">' .$respuesta[$index]. '</textarea>';
+                echo '<input type="hidden" name="id" value="'.$id[$index].'">';
+                echo ' <button type="submit" class="btn-e" title="Guardar Cambios" ><i class="fas fa-save ico-e"></i></button>';
+            echo '</form>';
+            echo '<form method ="POST" action ="../scripts/PHP/faq-delete.php">';
+                echo ' <input type="hidden" name="id" value="' .$id[$index]. '"  >';
+                echo ' <button type="submit" class="btn-t" title="Eliminar" ><i class="fas fa-trash-alt ico-t"></i></button>';
+            echo '</form>';
+            echo '</div>';
         echo '</li>';
 
         echo '<div id="add-q" class="modal fade">';
@@ -88,31 +91,6 @@
         echo '                    <label for="respuesta" class="lab">Respuesta</label>';
         echo '                    <input type="text" class="in-mod" name="respuesta" required maxlength="255">';
         echo '                    <input type="submit" class="btn-mod" value="Agregar">';
-        echo '                </form>';
-        echo '            </div>';
-        echo '            </div>';
-        echo '        </div>';
-        echo '    </div>';
-        echo '</div>';
-
-
-        echo '<div id="modal-del" class="modal fade">';
-        echo '    <div class="modal-dialog modal-lg modal-dialog-centered">';
-        echo '        <div class="modal-content">';
-        echo '            <div class="modal-header">';
-        echo '                <button type="button" class="close" data-dismiss="modal" aria-label="close">';
-        echo '                    <span>x</span>';
-        echo '                </button>';
-        echo '            </div>';
-        echo '            <div class="modal-body text-center">';
-        echo '                <h4>¿Estas seguro de que quieres eliminar la pregunta?</h4>';
-        echo '                <div class="input-group">';
-        echo '                <form action="../scripts/PHP/faq-delete.php" method="POST" name="pre-del" class="input-group-append" >';
-        echo '                    <input type="hidden" name="id" value="' .$id[$index]. '"  >';
-        echo '                    <input type="submit" class="btn-acept" value="Confirmar">';
-        echo '                    <button type="button" class="btn-cancel" data-dismiss="modal" aria-label="close">';
-        echo '                        <span>Cancelar</span>';
-        echo '                    </button>';
         echo '                </form>';
         echo '            </div>';
         echo '            </div>';

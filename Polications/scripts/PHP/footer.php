@@ -10,6 +10,11 @@ function footer(){
     echo'                    <p>Polications es un sitio dedicado a mostrar información relevante
                                 y comunicar a los integrantes de la comunidad estudiantil de la
                                 Escuela Politécnica de Guadalajara</p>';
+    echo'                    <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>,
+                             <a href="https://www.freepik.com" title="Freepik">Freepik</a>,
+                             <a href="https://www.flaticon.es/autores/good-ware" title="Good Ware">Good Ware</a>,
+                             <a href="https://www.flaticon.com/authors/dmitri13" title="dmitri13">dmitri13</a>
+                              from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>';
     echo'                </div>';
     echo'                <div class="col-lg-4 col-md-4 col-sm-12">';
     echo'                    <h6 class="text-uppercase font-weight-bold">Contacto</h6>';
@@ -24,3 +29,4 @@ function footer(){
 }
 
 ?>
+

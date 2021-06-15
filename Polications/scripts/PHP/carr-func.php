@@ -1,6 +1,4 @@
 <?php
-
-
     function lista(){
         header("Content-Type: text/html;charset=utf-8");
         require 'conec.php';
@@ -26,7 +24,5 @@
             $st    [$iterador] = $inf ["Color"];
             $iterador++;
         }     
-    }
-
-     
+    } 
 ?>
